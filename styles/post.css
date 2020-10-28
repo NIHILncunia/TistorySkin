@@ -1,3 +1,15 @@
+@media (min-width: 1px) and (max-width: 600px) {
+  .quoteBlock > blockquote {
+    font-size: 11pt;
+  }
+}
+
+@media (min-width: 601px) {
+  .quoteBlock > blockquote {
+    font-size: 14pt;
+  }
+}
+
 .messageRed {
   padding: 10px;
   background: #c30505;
@@ -108,4 +120,34 @@
   font-family: "Font Awesome 5 Brands";
   font-weight: 900;
   margin-left: 5px;
+}
+
+.quoteBlock > blockquote {
+  background: #dddddd;
+  padding: 10px;
+  border: 1px solid #888888;
+  border-radius: 10px;
+  color: #888888;
+  text-align: center;
+}
+
+.quoteBlock > blockquote:before {
+  content: "\f10d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.quoteBlock > blockquote:after {
+  content: "\f10e";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 10px;
+}
+
+.quoteBlock > p {
+  margin-top: 5px !important;
+  text-align: right;
+  color: #888888;
+  font-style: italic;
 }
