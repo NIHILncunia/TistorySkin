@@ -78,6 +78,11 @@
   border-radius: 10px;
 }
 
+.linkNomal:hover {
+  color: #ffffff;
+  background: #11b32c;
+}
+
 .linkNomal:after {
   content: "\f360";
   font-family: "Font Awesome 5 Free";
@@ -93,9 +98,14 @@
   border-radius: 10px;
 }
 
+.linkYoutube:hover {
+  color: #ffffff;
+  background: #c30505;
+}
+
 .linkYoutube:after {
-  content: "\f360";
-  font-family: "Font Awesome 5 Free";
+  content: "\f167";
+  font-family: "Font Awesome 5 Brands";
   font-weight: 900;
   margin-left: 5px;
 }
