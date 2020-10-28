@@ -1,13 +1,18 @@
 /* 임포트 */
 @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
 
 /* 초기화 */
 * {
   padding: 0px;
   margin: 0px auto;
-  font-family: "Noto Sans KR",sans-serif;
+  font-family: "Noto Sans KR", "Noto Sans JP", sans-serif;
   font-weight: 400;
   text-decoration: none;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {
