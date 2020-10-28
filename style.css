@@ -288,15 +288,15 @@ body {
 }
 
 .contentCategory a {
-  color: #333333;
+  color: #218cd8;
   padding: 0px 5px;
   border-radius: 10px;
-  border: 1px solid #333333;
+  border: 1px solid #218cd8;
 }
 
 .contentCategory a:hover {
   color: #ffffff;
-  background: #333333;
+  background: #218cd8;
 }
 
 /* 본문 어드민 */
@@ -312,13 +312,13 @@ body {
 .contentAdmin p a {
   padding: 0px 5px;
   border-radius: 10px;
-  color: #333333;
-  border: 1px solid #333333;
+  color: #218cd8;
+  border: 1px solid #218cd8;
 }
 
 .contentAdmin p a:hover {
   color: #ffffff;
-  background: #333333;
+  background: #218cd8;
 }
 
 /* 페이지 */
