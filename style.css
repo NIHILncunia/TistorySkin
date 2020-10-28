@@ -1,0 +1,619 @@
+/* 임포트 */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+/* 초기화 */
+* {
+  padding: 0px;
+  margin: 0px auto;
+  font-family: "Noto Sans KR",sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+body {
+  background: #dddddd;
+}
+
+/* 반응형 처리 */
+@media (min-width: 1px) and (max-width: 600px) {
+  .contentArticle,
+  .contentInfo,
+  .contentAdmin,
+  .contentTag,
+  #blogPaging,
+  .sidebarContent,
+  .gotoTop > a,
+  .gotoCategory > a,
+  .itemName,
+  .itemDate,
+  .topMenu span a,
+  .contentDate,
+  input#entry4password::placeholder,
+  .tagItemBox a,
+  .contentDecription {
+    font-size: 11pt;
+  }
+
+  .contentTitle,
+  .sidebarItem .sidebarTitle,
+  .areaNameTitle {
+    font-size: 16pt;
+  }
+}
+
+@media (min-width: 601px) {
+  .contentArticle,
+  .contentInfo,
+  .contentAdmin,
+  .contentTag,
+  #blogPaging,
+  .sidebarContent,
+  .gotoTop > a,
+  .gotoCategory > a,
+  .itemName,
+  .itemDate,
+  .topMenu span a,
+  .contentDate,
+  input#entry4password::placeholder,
+  .tagItemBox a,
+  .contentDecription {
+    font-size: 14pt;
+  }
+
+  .contentTitle,
+  .sidebarItem .sidebarTitle,
+  .areaNameTitle {
+    font-size: 22pt;
+  }
+}
+
+/* 상단 타이틀, 검색바 */
+#blogTop {
+  background: #333333;
+  padding: 10px;
+  text-align: center;
+}
+
+#topTitle {
+  font-size: 24pt;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+#topTitle a {
+  color: #ffffff;
+  font-weight: 500;
+  padding: 0px 20px;
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+}
+
+#topTitle a:hover {
+  background: #ffffff;
+  color: #333333;
+}
+
+#topSearch {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+#topSearch input[type="text"] {
+  box-sizing: border-box;
+  flex: 1 1 0;
+  padding: 5px;
+  margin-right: 5px;
+  border: none;
+  background: #ffffff;
+  font-size: 14pt;
+  text-align: center;
+  color: #333333;
+}
+
+#topSearch input[type="text"]::placeholder {
+  color: #aaaaaa;
+}
+
+.searchButton {
+  box-sizing:border-box;
+  width: 50px;
+  font-size: 14pt;
+  border: none;
+  background: #ffffff;
+  color: #333333;
+}
+
+.topMenu {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.topMenu span a {
+  padding: 5px 10px;
+  background: #ffffff;
+  display: inline-block;
+  border-radius: 20px;
+  margin-right: 2px;
+  margin-left: 2px;
+  color: #333333;
+  box-shadow: 0px 0px 10px -4px #333333;
+}
+
+.topMenu span a:hover {
+  color: #ffffff;
+  background: #333333;
+}
+
+/* 중앙 */
+#blogMiddle {
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 900px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* 이동 버튼 */
+#blogMiddle > .gotoTop,
+#blogMiddle > .gotoCategory {
+  display: block;
+  text-align: right;
+}
+
+.gotoTop > a,
+.gotoCategory > a {
+  background: #333333;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  color: #333333;
+  background: #ffffff;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 10px -4px #333333;
+}
+
+.gotoTop > a:before,
+.gotoCategory > a:before {
+  content: "\f0c1";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+.gotoTop > a:hover,
+.gotoCategory > a:hover {
+  color: #ffffff;
+  background: #333333;
+}
+
+/* 검색 결과 */
+#blogSearchList {
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px -4px #333333;
+  color: #333333;
+}
+
+.areaNameTitle {
+  margin-bottom: 20px;
+}
+
+.areaNameTitle p {
+  font-weight: 900;
+  background: #333333;
+  border-radius: 20px;
+  color: #ffffff;
+  padding: 3px 10px;
+}
+
+.listItem {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.listItem a {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #333333;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border-radius: 10px;
+  color: #333333;
+}
+
+.listItem a:hover {
+  background: #333333;
+  color: #ffffff;
+}
+
+.itemName {
+  flex: 1 1 0;
+}
+
+.itemName img {
+  display: none;
+}
+
+/* 본문 */
+.blogPost,
+.blogNoticePost,
+.blogProtectedPost,
+.blogTagCloud,
+.blogPagePost,
+.blogGuestBook {
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px -4px #333333;
+  color: #333333;
+}
+
+/* 본문 타이틀 */
+.contentTitle {
+  margin-bottom: 60px;
+}
+
+.contentTitle a {
+  background: #333333;
+  display: block;
+  border-radius: 20px;
+  padding: 3px 10px;
+  color: #ffffff;
+  font-weight: 900;
+  margin-bottom: 10px;
+  border: 1px solid #333333;
+}
+
+.contentTitle a:hover {
+  color: #333333;
+  background: #ffffff;
+}
+
+/* 본문 정보 */
+.contentInfo {
+  width: 100%;
+}
+
+.contentDate {
+  margin-bottom: 5px;
+}
+
+.contentCategory {
+  border-radius: 10px;
+  margin: 0px;
+}
+
+.contentCategory a {
+  color: #333333;
+  padding: 0px 5px;
+  border-radius: 10px;
+  border: 1px solid #333333;
+}
+
+.contentCategory a:hover {
+  color: #ffffff;
+  background: #333333;
+}
+
+/* 본문 어드민 */
+.contentAdmin {
+  margin-top: 5px;
+}
+
+.adminEdit {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.contentAdmin p a {
+  padding: 0px 5px;
+  border-radius: 10px;
+  color: #333333;
+  border: 1px solid #333333;
+}
+
+.contentAdmin p a:hover {
+  color: #ffffff;
+  background: #333333;
+}
+
+/* 페이지 */
+.blogPagePost {
+  margin-bottom: 60px;
+}
+
+/* 보호글 */
+.contentForm {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+input#entry4password {
+  box-sizing: border-box;
+  background: #ffffff;
+  padding: 10px;
+  color: #333333;
+  border: 5px solid #333333;
+  flex: 1 1 0;
+}
+
+input#entry4password::placeholder {
+  text-align: center;
+}
+
+.contentForm button {
+  box-sizing: border-box;
+  padding: 15px;
+  background: #333333;
+  border: none;
+  color: #ffffff;
+}
+
+.blogProtectedPost .contentArticle {
+  margin-bottom: 0px;
+}
+
+.contentMessage {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* 본문 */
+.contentArticle {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: justify;
+}
+
+.contentArticle p {
+  margin: 30px 0px !important
+}
+
+.container_postbtn {
+  display: none;
+}
+
+/* 태그 */
+.contentTag {
+  color: #ffffff;
+  margin-bottom: 60px;
+  text-align:justify;
+  line-height: 2.0;
+}
+
+.contentTag a {
+  padding: 0px 10px;
+  border: 1px solid #333333;
+  color: #333333;
+  border-radius: 10px;
+}
+
+.contentTag a:hover {
+  color: #ffffff;
+  background: #333333;
+}
+
+/* 덧글 */
+.contentComment {
+  background: #333333;
+  padding: 10px;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+.contentComment a {
+  color: #ffffff;
+}
+
+/* 게스트북 */
+.blogGuestBook > .contentTitle {
+  background: #333333;
+  border-radius: 20px;
+  padding: 3px 10px;
+  color: #ffffff;
+  font-weight: 900;
+  margin-bottom: 60px;
+}
+
+.contentDecription {
+  margin-bottom: 60px;
+}
+
+/* 페이징 */
+#blogPaging {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px -4px #333333;
+}
+
+#blogPaging > .num > span,
+#blogPaging > a:nth-last-child(1),
+#blogPaging > a:nth-child(1) {
+  border: 1px solid #333333;
+  color: #333333;
+  border-radius: 10px;
+  display:inline-block;
+  padding: 0px 5px;
+}
+
+#blogPaging > .num > span:hover,
+#blogPaging > .num > .selected,
+#blogPaging > a:nth-last-child(1):hover,
+#blogPaging > a:nth-child(1):hover {
+  color: #ffffff;
+  background: #333333;
+}
+
+#blogPaging > .no-more-prev:hover,
+#blogPaging > .no-more-next:hover {
+  color: #333333 !important;
+  background: #ffffff !important;
+}
+
+/* 태그 클라우드 */
+.blogTagCloud {
+  margin-bottom: 60px;
+}
+
+.blogTagCloud > .contentTitle {
+  background: #333333;
+  border-radius: 20px;
+  padding: 3px 10px;
+  color: #ffffff;
+  font-weight: 900;
+  margin-bottom: 60px;
+}
+
+.tagItemBox a {
+  border: 1px solid #333333;
+  border-radius: 10px;
+  padding: 0px 5px;
+  line-height: 1.8;
+  color: #333333;
+}
+
+.tagItemBox a:hover {
+  color: #ffffff;
+  background: #333333;
+}
+
+/* 사이드바 */
+.sidebarItem {
+  margin-bottom: 60px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px -4px #333333;
+}
+
+.sidebarItem .sidebarTitle {
+  background: #333333;
+  border-radius: 20px;
+  padding: 3px 10px;
+  color: #ffffff;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+/* 카테고리 */
+.sidebarContent > ul > li,
+.sidebarContent > ul > li > ul > li,
+.sidebarContent > ul > li > ul > li > ul > li {
+  list-style: none;
+}
+
+.sidebarContent > ul > li > a::before {
+  content: "\f07c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+.sidebarContent > ul > li > ul > li > a:before {
+  content: "\f07c";
+  font-family: "Font Awesome 5 Free";
+  margin-right: 5px;
+}
+
+.sidebarContent > ul > li > ul > li > ul > li > a:before {
+  content: "\f07b";
+  font-family: "Font Awesome 5 Free";
+  margin-right: 5px;
+}
+
+.sidebarContent > ul > li > a {
+  border: 1px solid #333333;
+  color: #333333;
+  padding: 5px;
+  display: block;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.sidebarContent > ul > li > ul > li > a {
+  border: 1px solid #333333;
+  color: #333333;
+  padding: 5px;
+  display: block;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 30px;
+}
+
+.sidebarContent > ul > li > ul > li > ul > li > a {
+  border: 1px solid #333333;
+  color: #333333;
+  padding: 5px;
+  display: block;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 60px;
+}
+
+.sidebarContent > ul > li > a:hover,
+.sidebarContent > ul > li > ul > li > a:hover,
+.sidebarContent > ul > li > ul > li > ul > li > a:hover {
+  color: #ffffff;
+  background: #333333;
+}
+
+.tt_category img {
+  display: none;
+}
+
+/* 최근 공지 */
+.sidebarContent a {
+  padding: 5px;
+  border: 1px solid #333333;
+  border-radius: 10px;
+  display: block;
+  color: #333333;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.sidebarContent a:hover {
+  color: #ffffff;
+  background: #333333;
+}
+
+/* 하단 */
+#blogBottom {
+  padding: 10px;
+  background: #333333;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+#blogBottom #nihil {
+  float: left;
+}
+
+#blogBottom #power {
+  float: right;
+}
+
+#blogBottom #power a {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+
+#blogBottom #power a:hover {
+  color: #333333;
+  background: #ffffff;
+}
