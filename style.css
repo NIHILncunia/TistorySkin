@@ -619,7 +619,8 @@ input#entry4password::placeholder {
 }
 
 /* 구글 광고 */
-.blogGoogleAD {
+.blogTopGoogleAD,
+.blogBottomGoogleAD {
   margin-bottom: 60px;
   margin-top: 60px;
 }
