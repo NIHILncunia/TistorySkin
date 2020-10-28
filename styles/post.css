@@ -2,11 +2,35 @@
   .quoteBlock > blockquote {
     font-size: 11pt;
   }
+
+  .heading1 {
+    font-size: 16pt;
+  }
+
+  .heading2 {
+    font-size: 14pt;
+  }
+
+  .heading3 {
+    font-size: 12pt;
+  }
 }
 
 @media (min-width: 601px) {
   .quoteBlock > blockquote {
     font-size: 14pt;
+  }
+
+  .heading1 {
+    font-size: 22pt;
+  }
+
+  .heading2 {
+    font-size: 18pt;
+  }
+
+  .heading3 {
+    font-size: 15pt;
   }
 }
 
@@ -122,6 +146,26 @@
   margin-left: 5px;
 }
 
+.linkBlog {
+  border: 1px solid #333333;
+  color: #333333;
+  padding: 0px 5px;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+
+.linkBlog:hover {
+  color: #ffffff;
+  background: #333333;
+}
+
+.linkBlog:after {
+  content: "\f0c1";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 5px;
+}
+
 .quoteBlock > blockquote {
   background: #dddddd;
   padding: 10px;
@@ -150,4 +194,64 @@
   text-align: right;
   color: #888888;
   font-style: italic;
+}
+
+.postLine {
+  border: none;
+  text-align: center;
+  color: #333333;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.postLine:before {
+  content: "\f7a4\0020\f7a4\0020\f7a4\0020\f7a4\0020\f7a4\0020\f7a4\0020\f7a4\0020\f7a4";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.heading1 {
+  font-weight: 900;
+  color: #ffffff;
+  background: #333333;
+  padding: 0px 10px;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.heading2 {
+  font-weight: 900;
+  color: #ffffff;
+  background: #666666;
+  padding: 0px 10px;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.heading3 {
+  font-weight: 900;
+  color: #ffffff;
+  background: #888888;
+  padding: 0px 10px;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.heading1:before,
+.heading2:before,
+.heading3:before {
+  content: "\f075";
+  margin-right: 5px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.postWordBox {
+  background: #888888;
+  color: #ffffff;
+  padding: 0px 5px;
+  border-radius: 10px;
 }
