@@ -69,3 +69,33 @@
   font-weight: 900;
   margin-right: 5px;
 }
+
+.linkNomal {
+  border: 1px solid #11b32c;
+  color: #11b32c;
+  padding: 0px 5px;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+
+.linkNomal:after {
+  content: "\f360";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 5px;
+}
+
+.linkYoutube {
+  border: 1px solid #c30505;
+  color: #c30505;
+  padding: 0px 5px;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+
+.linkYoutube:after {
+  content: "\f360";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 5px;
+}
