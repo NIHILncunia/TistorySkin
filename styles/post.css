@@ -350,3 +350,7 @@
   height: calc(100% - 5px);
   border-radius: 20px;
 }
+
+.hiddenLine {
+  display: none;
+}
