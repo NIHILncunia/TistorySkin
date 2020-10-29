@@ -2,6 +2,20 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
 
+/* 폰트 정의 */
+@font-face {
+  font-family: 'KyokashoNP-B';
+  src: url('./images/KyokashoNP-B.eot');
+  src: 
+    url('./images/KyokashoNP-B.eot?#iefix') format('embedded-opentype'),
+    url('./images/KyokashoNP-B.woff2') format('woff2'),
+    url('./images/KyokashoNP-B.svg#KyokashoNP-B') format('svg'),
+    url('./images/KyokashoNP-B.ttf') format('truetype'),
+    url('./images/KyokashoNP-B.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
 /* 초기화 */
 * {
   padding: 0px;

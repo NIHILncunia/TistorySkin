@@ -354,3 +354,58 @@
 .hiddenLine {
   display: none;
 }
+
+.japaneseBlock {
+  padding: 10px;
+  background: #333333;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.japaneseBlock > .japanese {
+  background: #555555;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 0px 5px;
+}
+
+.japaneseBlock > .japanese {
+    font-size: 40pt;
+}
+
+.japaneseBlock > .korean {
+  font-size: 30pt;
+  margin-top: 10px;
+  padding: 0px 5px;
+  color: #ffffff;
+  border-radius: 20px;
+  font-weight: 900;
+}
+
+.jpWord {
+  padding: 10px;
+  background: #333333;
+  color: #ffffff;
+  text-align: justify;
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.jpWord > .japanese {
+  background: #555555;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 0px 5px;
+}
+
+.jpWord > .korean {
+  margin-top: 10px;
+  padding: 0px 5px;
+  color: #ffffff;
+  border-radius: 20px;
+  font-weight: 900;
+}
