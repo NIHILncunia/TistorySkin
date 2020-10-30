@@ -49,7 +49,8 @@ body {
   .contentDate,
   input#entry4password::placeholder,
   .tagItemBox a,
-  .contentDecription {
+  .contentDecription,
+  .blogSearchDescription p {
     font-size: 11pt;
   }
 
@@ -75,7 +76,8 @@ body {
   .contentDate,
   input#entry4password::placeholder,
   .tagItemBox a,
-  .contentDecription {
+  .contentDecription,
+  .blogSearchDescription p {
     font-size: 14pt;
   }
 
@@ -217,7 +219,7 @@ body {
 }
 
 .areaNameTitle {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .areaNameTitle p {
@@ -226,6 +228,14 @@ body {
   border-radius: 20px;
   color: #ffffff;
   padding: 3px 10px;
+}
+
+.blogSearchDescription {
+  margin-bottom: 60px;
+}
+
+#tt-body-search #blogSearchList > .blogSearchDescription {
+  display: none;
 }
 
 .listItem {
