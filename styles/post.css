@@ -36,76 +36,63 @@
   }
 }
 
-.messageRed {
+.messageRed,
+.messageBlue,
+.messageGreen,
+.messageYellow {
   padding: 10px;
-  background: #c30505;
-  color: #ffffff;
   border-radius: 10px;
   text-align: center;
   margin-bottom: 30px;
   margin-top: 30px;
   text-shadow: 0.5px 0.5px 4px #000000;
+}
+
+.messageRed {
+  background: #c30505;
+  color: #ffffff;
+}
+
+.messageBlue {
+  background: #218cd8;
+  color: #ffffff;
+}
+
+.messageGreen {
+  background: #11b32c;
+  color: #ffffff;
+}
+
+.messageYellow {
+  background: #cccc24;
+  color: #ffffff;
+}
+
+.messageRed:before,
+.messageBlue:before,
+.messageGreen:before,
+.messageYellow:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-bottom: 10px;
+  display:block;
+  font-size: 40pt;
 }
 
 .messageRed:before {
   content: "\f057";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  margin-right: 5px;
-}
-
-.messageBlue {
-  padding: 10px;
-  background: #218cd8;
-  color: #ffffff;
-  border-radius: 10px;
-  text-align: center;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  text-shadow: 0.5px 0.5px 4px #000000;
 }
 
 .messageBlue:before {
   content: "\f059";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  margin-right: 5px;
-}
-
-.messageGreen {
-  padding: 10px;
-  background: #11b32c;
-  color: #ffffff;
-  border-radius: 10px;
-  text-align: center;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  text-shadow: 0.5px 0.5px 4px #000000;
 }
 
 .messageGreen:before {
   content: "\f05a";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  margin-right: 5px;
-}
-
-.messageYellow {
-  padding: 10px;
-  background: #cccc24;
-  color: #ffffff;
-  border-radius: 10px;
-  text-align: center;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  text-shadow: 0.5px 0.5px 4px #000000;
 }
 
 .messageYellow:before {
   content: "\f06a";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  margin-right: 5px;
 }
 
 .linkNomal {
