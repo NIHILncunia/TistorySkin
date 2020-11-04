@@ -239,10 +239,11 @@
 }
 
 .postWordBox {
-  background: #333333;
-  color: #ffffff;
-  padding: 0px 10px;
+  background: #dddddd;
+  color: #333333;
+  padding: 0px 5px;
   border-radius: 10px;
+  border: 1px solid #33333350;
 }
 
 .postMoreBox {
