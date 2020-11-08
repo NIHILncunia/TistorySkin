@@ -5,14 +5,27 @@
 /* 폰트 정의 */
 @font-face {
   font-family: 'KyokashoNP-B';
-  src: url('./images/KyokashoNP-B.eot');
+  src: url('https://nihilncunia.github.io/TistorySkin/images/KyokashoNP-B.eot');
   src: 
-    url('./images/KyokashoNP-B.eot?#iefix') format('embedded-opentype'),
-    url('./images/KyokashoNP-B.woff2') format('woff2'),
-    url('./images/KyokashoNP-B.svg#KyokashoNP-B') format('svg'),
-    url('./images/KyokashoNP-B.ttf') format('truetype'),
-    url('./images/KyokashoNP-B.woff') format('woff');
-  font-weight: 500;
+    url('https://nihilncunia.github.io/TistorySkin/images/KyokashoNP-B.eot?#iefix') format('embedded-opentype'),
+    url('https://nihilncunia.github.io/TistorySkin/images/KyokashoNP-B.woff2') format('woff2'),
+    url('https://nihilncunia.github.io/TistorySkin/images/KyokashoNP-B.svg#KyokashoNP-B') format('svg'),
+    url('https://nihilncunia.github.io/TistorySkin/images/KyokashoNP-B.ttf') format('truetype'),
+    url('https://nihilncunia.github.io/TistorySkin/images/KyokashoNP-B.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CascadiaCode';
+  src: url('https://nihilncunia.github.io/TistorySkin/images/CascadiaCode.eot');
+  src:
+    url('https://nihilncunia.github.io/TistorySkin/images/CascadiaCode.eot?#iefix') format('embedded-opentype'),
+    url('https://nihilncunia.github.io/TistorySkin/images/CascadiaCode.woff2') format('woff2'),
+    url('https://nihilncunia.github.io/TistorySkin/images/CascadiaCode.svg#CascadiaCode') format('svg'),
+    url('https://nihilncunia.github.io/TistorySkin/images/CascadiaCode.ttf') format('truetype'),
+    url('https://nihilncunia.github.io/TistorySkin/images/CascadiaCode.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
 }
 
