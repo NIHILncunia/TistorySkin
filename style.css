@@ -61,6 +61,27 @@ body {
   margin-bottom: 60px;
 }
 
+/* 코드 폰트 설정 */
+pre {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  border-radius: 10px !important;
+}
+
+code {
+  padding: 5px !important;
+}
+
+pre,
+code,
+code .hljs-meta,
+code .hljs-tag,
+code .hljs-name,
+code .hljs-attr,
+code .hljs-string {
+  font-family: "CascadiaCode", "Noto Sans KR", sans-serif !important;
+}
+
 /* 반응형 처리 */
 @media (min-width: 1px) and (max-width: 600px) {
   .contentArticle,
