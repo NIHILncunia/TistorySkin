@@ -94,7 +94,7 @@ code .hljs-string {
   .gotoCategory > a,
   .itemName,
   .itemDate,
-  .topMenu span a,
+  .topMenu a,
   .contentDate,
   input#entry4password::placeholder,
   .tagItemBox a,
@@ -123,7 +123,7 @@ code .hljs-string {
   .gotoCategory > a,
   .itemName,
   .itemDate,
-  .topMenu span a,
+  .topMenu a,
   .contentDate,
   input#entry4password::placeholder,
   .tagItemBox a,
@@ -203,7 +203,7 @@ code .hljs-string {
   margin-top: 10px;
 }
 
-.topMenu span a {
+.topMenu a {
   padding: 5px 10px;
   background: #ffffff;
   display: inline-block;
@@ -214,7 +214,7 @@ code .hljs-string {
   box-shadow: 0px 0px 10px -4px #333333;
 }
 
-.topMenu span a:hover {
+.topMenu a:hover {
   color: #ffffff;
   background: #333333;
 }
@@ -265,7 +265,7 @@ code .hljs-string {
 }
 
 /* 이동 버튼 */
-#blogMiddle > .gotoTop,
+#blogSideBar > .gotoTop,
 #blogMiddle > .gotoCategory {
   display: block;
   text-align: right;
@@ -605,6 +605,15 @@ input#entry4password::placeholder {
 }
 
 /* 사이드바 */
+
+#blogSideBar {
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 900px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .sidebarItem {
   margin-bottom: 60px;
   padding: 20px;

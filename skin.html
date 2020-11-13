@@ -35,488 +35,411 @@
   <title>[##_page_title_##] :: [##_title_##]</title>
   
   <!-- 구글 광고 추적 코드 -->
-  <script data-ad-client="ca-pub-9256396675875954" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script data-ad-client="ca-pub-1124884492338929" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
   <div id="[##_body_id_##]">
     <s_t3>
 
       <!-- 상단 블로그 제목 -->
-      <div id="blogTop">
-        <p id="topTitle"><a href="[##_blog_link_##]">[##_title_##]</a></p>
-        <s_search>
-          <div id="topSearch">
-            <input type="text" placeholder="검색어를 입력하세요." name="[##_search_name_##]" value="[##_search_text_##]" onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }"/>
-            <button onclick="[##_search_onclick_submit_##]" class="searchButton"><i class="fas fa-search"></i></button>
-          </div>
-        </s_search>
-      </div>
-      <div class="topMenu">
-        <span><a href="/"><i class="fas fa-home"></i></a></span>
-        <span><a href="/tag"><i class="fas fa-tags"></i></a></span>
-        <span><a href="/guestbook"><i class="fas fa-book"></i></a></span>
-        <span><a href="https://github.com/NIHILncunia" rel="noopener noreferrer" target="_blank"><i class="fab fa-github"></i></a></span>
-        <span><a href="/manage" rel="noopener noreferrer" target="_blank"><i class="fas fa-cog"></i></a></span>
-        <span><a href="/manage/newpost" rel="noopener noreferrer" target="_blank"><i class="fas fa-pen"></i></a></span>
-      </div>
+      <header>
+        <div id="blogTop">
+          <p id="topTitle"><a href="[##_blog_link_##]">[##_title_##]</a></p>
+          <s_search>
+            <div id="topSearch">
+              <input type="text" placeholder="검색어를 입력하세요." name="[##_search_name_##]" value="[##_search_text_##]" onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }"/>
+              <button onclick="[##_search_onclick_submit_##]" class="searchButton"><i class="fas fa-search"></i></button>
+            </div>
+          </s_search>
+        </div>
+        <div class="topMenu">
+          <a href="/"><i class="fas fa-home"></i></a>
+          <a href="/tag"><i class="fas fa-tags"></i></a>
+          <a href="/guestbook"><i class="fas fa-book"></i></a>
+          <a href="https://github.com/NIHILncunia" rel="noopener noreferrer" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="/manage" rel="noopener noreferrer" target="_blank"><i class="fas fa-cog"></i></a>
+          <a href="/manage/newpost" rel="noopener noreferrer" target="_blank"><i class="fas fa-pen"></i></a>
+        </div>
+      </header>
 
       <!-- 블로그 중앙 -->
-      <div id="blogMiddle">
+      <main id="blogMiddle">
 
         <!-- 페이지 모음 -->
-        <div class="blogTopPage">
-          <div class="pageTitle">페이지</div>
-          <div class="pageItem">
-            <a href="/pages/japanese-learning">일본어 공부 자료 모음</a>
+        <section>
+          <div class="blogTopPage">
+            <div class="pageTitle">페이지</div>
+            <div class="pageItem">
+              <a href="/pages/japanese-learning">일본어 공부 자료 모음</a>
+            </div>
           </div>
-        </div>
+        </section>
 
-        <!-- 검색 결과 -->
+        <!-- 카테고리로 이동하기 -->
         <div class="gotoCategory" id="top">
           <a href="#category">카테고리로</a>
         </div>
+
+        <!-- 검색 결과 -->
         <s_list>
-          <div id="blogSearchList">
-            <div class="areaNameTitle">
-              <p><i class="fas fa-search"></i> '[##_list_conform_##]' 관련 글 [##_list_count_##]건</p>
-            </div>
-            <div class="blogSearchDescription">
-              <div class="googleTopAd">
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- 뉴링크1 -->
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-9256396675875954"
-                    data-ad-slot="6293569744"
-                    data-ad-format="link"
-                    data-full-width-responsive="true"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
+          <section>
+            <div id="blogSearchList">
+              <div class="areaNameTitle">
+                <p><i class="fas fa-search"></i> '[##_list_conform_##]' 관련 글 [##_list_count_##]건</p>
               </div>
-              <p>[##_list_description_##]</p>
-            </div>
-            <div id="areaBodyList">
-              <s_list_rep>
-                <div class="listItem">
-                  <a href="[##_list_rep_link_##]">
-                    <p class="itemName">[##_list_rep_title_##]</p>
-                    <p class="itemDate">[##_list_rep_regdate_##]</p>
-                  </a>
-                </div>
-              </s_list_rep>
-              <div class="googleBottomAd">
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- 뉴디스플레이1 -->
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-9256396675875954"
-                    data-ad-slot="4738688808"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
+              <div class="blogSearchDescription">
+                <!-- <div class="googleTopAd">
+                  광고 자리
+                </div> -->
+                <p>[##_list_description_##]</p>
+              </div>
+              <div id="areaBodyList">
+                <s_list_rep>
+                  <div class="listItem">
+                    <a href="[##_list_rep_link_##]">
+                      <p class="itemName">[##_list_rep_title_##]</p>
+                      <p class="itemDate">[##_list_rep_regdate_##]</p>
+                    </a>
+                  </div>
+                </s_list_rep>
+                <!-- <div class="googleBottomAd">
+                  광고자리
+                </div> -->
               </div>
             </div>
-          </div>
+          </section>
         </s_list>
 
         <!-- 공지 -->
         <s_notice_rep>
-          <div class="blogNoticePost">
-            <p class="contentTitle"><a href="[##_notice_rep_link_##]"><i class="fas fa-pen"></i> [##_notice_rep_title_##]</a></p>
-            <p class="contentDate"><i class="far fa-clock"></i> 작성 시간 <i class="fas fa-angle-double-right"></i> [##_notice_rep_date_##]</p>
-            <div class="contentArticle">
-              <div class="googleTopAd">
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- 뉴링크1 -->
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-9256396675875954"
-                    data-ad-slot="6293569744"
-                    data-ad-format="link"
-                    data-full-width-responsive="true"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
+          <article>
+            <div class="blogNoticePost">
+              <p class="contentTitle">
+                <a href="[##_notice_rep_link_##]"><i class="fas fa-pen"></i> [##_notice_rep_title_##]</a>
+              </p>
+              <p class="contentDate">
+                <i class="far fa-clock"></i>
+                작성 시간 <i class="fas fa-angle-double-right"></i> [##_notice_rep_date_##]
+              </p>
+              <div class="contentArticle">
+                <!-- <div class="googleTopAd">
+                  광고 자리
+                </div> -->
+                [##_notice_rep_desc_##]
               </div>
-              [##_notice_rep_desc_##]
+              <!-- <div class="googleBottomAd">
+                광고자리
+              </div> -->
+              <div class="contentComment">
+                <div id="disqus_thread"></div>
+                <script>
+  
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://https-nihil-ncunia-tistory-com.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              </div>
             </div>
-            <div class="googleBottomAd">
-              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-              <!-- 뉴디스플레이1 -->
-              <ins class="adsbygoogle"
-                  style="display:block"
-                  data-ad-client="ca-pub-9256396675875954"
-                  data-ad-slot="4738688808"
-                  data-ad-format="auto"
-                  data-full-width-responsive="true"></ins>
-              <script>
-                  (adsbygoogle = window.adsbygoogle || []).push({});
-              </script>
-            </div>
-            <div class="contentComment">
-              <div id="disqus_thread"></div>
-              <script>
-
-              /**
-              *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-              *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-              /*
-              var disqus_config = function () {
-              this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-              this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-              };
-              */
-              (function() { // DON'T EDIT BELOW THIS LINE
-              var d = document, s = d.createElement('script');
-              s.src = 'https://https-nihil-ncunia-tistory-com.disqus.com/embed.js';
-              s.setAttribute('data-timestamp', +new Date());
-              (d.head || d.body).appendChild(s);
-              })();
-              </script>
-              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-            </div>
-          </div>
+          </article>
         </s_notice_rep>
 
         <!-- 글 -->
         <s_article_rep>
-          <div class="blogPost">
-            <p class="contentTitle"><a href="[##_article_rep_link_##]"><i class="fas fa-pen"></i> [##_article_rep_title_##]</a></p>
-            <div class="contentInfo">
-              <p class="contentDate"><i class="far fa-clock"></i> 작성 시간 <i class="fas fa-angle-double-right"></i> [##_article_rep_date_##]</p>
-              <p class="contentCategory"><i class="fas fa-list"></i> 카테고리 <i class="fas fa-angle-double-right"></i> <a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a></p>
-            </div>
-            <s_ad_div>
-              <div class="contentAdmin">
-                <p class="adminEdit"><i class="far fa-edit"></i> 수정 <i class="fas fa-angle-double-right"></i> <a href="#" onclick="[##_s_ad_m_onclick_##]">클릭</a></p>
-                <p class="adminDelete"><i class="fas fa-minus-circle"></i> 삭제 <i class="fas fa-angle-double-right"></i> <a href="#" onclick="[##_s_ad_d_onclick_##]">클릭</a></p>
+          <article>
+            <div class="blogPost">
+              <p class="contentTitle">
+                <a href="[##_article_rep_link_##]"><i class="fas fa-pen"></i> [##_article_rep_title_##]</a>
+              </p>
+              <div class="contentInfo">
+                <p class="contentDate">
+                  <i class="far fa-clock"></i> 작성 시간 <i class="fas fa-angle-double-right"></i> [##_article_rep_date_##]
+                </p>
+                <p class="contentCategory">
+                  <i class="fas fa-list"></i> 카테고리 <i class="fas fa-angle-double-right"></i>
+                  <a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a>
+                </p>
               </div>
-            </s_ad_div>
-            <div class="contentArticle">
-              <div class="googleTopAd">
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- 뉴링크1 -->
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-9256396675875954"
-                    data-ad-slot="6293569744"
-                    data-ad-format="link"
-                    data-full-width-responsive="true"></ins>
+              <s_ad_div>
+                <div class="contentAdmin">
+                  <p class="adminEdit"><i class="far fa-edit"></i> 수정 <i class="fas fa-angle-double-right"></i> <a href="#" onclick="[##_s_ad_m_onclick_##]">클릭</a></p>
+                  <p class="adminDelete"><i class="fas fa-minus-circle"></i> 삭제 <i class="fas fa-angle-double-right"></i> <a href="#" onclick="[##_s_ad_d_onclick_##]">클릭</a></p>
+                </div>
+              </s_ad_div>
+              <div class="contentArticle">
+                <!-- <div class="googleTopAd">
+                  광고 자리
+                </div> -->
+                [##_article_rep_desc_##]
+              </div>
+              <!-- <div class="googleBottomAd">
+                광고자리
+              </div> -->
+              <s_tag_label>
+                <div class="contentTag">
+                  [##_tag_label_rep_##]
+                </div>
+              </s_tag_label>
+              <div class="contentComment">
+                <div id="disqus_thread"></div>
                 <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
+  
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://https-nihil-ncunia-tistory-com.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
                 </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
               </div>
-              [##_article_rep_desc_##]
             </div>
-            <div class="googleBottomAd">
-              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-              <!-- 뉴디스플레이1 -->
-              <ins class="adsbygoogle"
-                  style="display:block"
-                  data-ad-client="ca-pub-9256396675875954"
-                  data-ad-slot="4738688808"
-                  data-ad-format="auto"
-                  data-full-width-responsive="true"></ins>
-              <script>
-                  (adsbygoogle = window.adsbygoogle || []).push({});
-              </script>
-            </div>
-            <s_tag_label>
-              <div class="contentTag">
-                [##_tag_label_rep_##]
-              </div>
-            </s_tag_label>
-            <div class="contentComment">
-              <div id="disqus_thread"></div>
-              <script>
-
-              /**
-              *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-              *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-              /*
-              var disqus_config = function () {
-              this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-              this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-              };
-              */
-              (function() { // DON'T EDIT BELOW THIS LINE
-              var d = document, s = d.createElement('script');
-              s.src = 'https://https-nihil-ncunia-tistory-com.disqus.com/embed.js';
-              s.setAttribute('data-timestamp', +new Date());
-              (d.head || d.body).appendChild(s);
-              })();
-              </script>
-              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-            </div>
-          </div>
+          </article>
         </s_article_rep>
 
         <!-- 보호글 -->
         <s_article_protected>
-          <div class="blogProtectedPost">
-            <p class="contentTitle"><a href="[##_article_rep_link_##]"><i class="fas fa-pen"></i> [##_article_rep_title_##]</a></p>
-            <div class="contentInfo">
-              <p class="contentDate"><i class="far fa-clock"></i> 작성 시간 <i class="fas fa-angle-double-right"></i> [##_article_rep_date_##]</p>
-              <p class="contentCategory"><i class="fas fa-list"></i> 카테고리 <i class="fas fa-angle-double-right"></i> <a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a></p>
-            </div>
-            <div class="contentArticle">
-              <div class="googleTopAd">
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- 뉴링크1 -->
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-9256396675875954"
-                    data-ad-slot="6293569744"
-                    data-ad-format="link"
-                    data-full-width-responsive="true"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
+          <article>
+            <div class="blogProtectedPost">
+              <p class="contentTitle">
+                <a href="[##_article_rep_link_##]"><i class="fas fa-pen"></i> [##_article_rep_title_##]</a>
+              </p>
+              <div class="contentInfo">
+                <p class="contentDate">
+                  <i class="far fa-clock"></i> 작성 시간 <i class="fas fa-angle-double-right"></i> [##_article_rep_date_##]
+                </p>
+                <p class="contentCategory">
+                  <i class="fas fa-list"></i> 카테고리 <i class="fas fa-angle-double-right"></i>
+                  <a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a>
+                </p>
               </div>
-              <div class="contentMessage">자물쇠로 단단히 잠겨있습니다. 비밀번호가 필요합니다.</div>
-              <div class="contentForm">
-                <input class="password" type="password" maxlength="16" id="[##_article_password_##]" name="[##_article_password_##]" value="" placeholder="비밀번호를 입력하세요." onkeydown="if (event.keyCode == 13)[##_article_dissolve_##]" />
-                <button onclick="[##_article_dissolve_##]">입력</button>
-              </div>
-              <div class="googleBottomAd">
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- 뉴디스플레이1 -->
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-9256396675875954"
-                    data-ad-slot="4738688808"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
+              <div class="contentArticle">
+                <!-- <div class="googleTopAd">
+                  광고 자리
+                </div> -->
+                <div class="contentMessage">자물쇠로 단단히 잠겨있습니다. 비밀번호가 필요합니다.</div>
+                <div class="contentForm">
+                  <input class="password" type="password" maxlength="16" id="[##_article_password_##]" name="[##_article_password_##]" value="" placeholder="비밀번호를 입력하세요." onkeydown="if (event.keyCode == 13)[##_article_dissolve_##]" />
+                  <button onclick="[##_article_dissolve_##]">입력</button>
+                </div>
+                <!-- <div class="googleBottomAd">
+                  광고자리
+                </div> -->
               </div>
             </div>
-          </div>
+          </article>
         </s_article_protected>
 
         <!-- 페이지 -->
         <s_page_rep>
-          <div class="blogPagePost">
-            <p class="contentTitle"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></p>
-            <p class="contentDate"><i class="far fa-clock"></i> 작성 시간 <i class="fas fa-angle-double-right"></i> [##_article_rep_date_##]</p>
-            <div class="contentArticle">
-              <div class="googleTopAd">
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- 뉴링크1 -->
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-9256396675875954"
-                    data-ad-slot="6293569744"
-                    data-ad-format="link"
-                    data-full-width-responsive="true"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
+          <article>
+            <div class="blogPagePost">
+              <p class="contentTitle"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></p>
+              <p class="contentDate">
+                <i class="far fa-clock"></i> 작성 시간 <i class="fas fa-angle-double-right"></i> [##_article_rep_date_##]
+              </p>
+              <div class="contentArticle">
+                <!-- <div class="googleTopAd">
+                  광고 자리
+                </div> -->
+                [##_article_rep_desc_##]
               </div>
-              [##_article_rep_desc_##]
+              <!-- <div class="googleBottomAd">
+                광고자리
+              </div> -->
+              <div class="contentComment">
+                <div id="disqus_thread"></div>
+                <script>
+  
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://https-nihil-ncunia-tistory-com.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              </div>
             </div>
-            <div class="googleBottomAd">
-              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-              <!-- 뉴디스플레이1 -->
-              <ins class="adsbygoogle"
-                  style="display:block"
-                  data-ad-client="ca-pub-9256396675875954"
-                  data-ad-slot="4738688808"
-                  data-ad-format="auto"
-                  data-full-width-responsive="true"></ins>
-              <script>
-                  (adsbygoogle = window.adsbygoogle || []).push({});
-              </script>
-            </div>
-            <div class="contentComment">
-              <div id="disqus_thread"></div>
-              <script>
-
-              /**
-              *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-              *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-              /*
-              var disqus_config = function () {
-              this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-              this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-              };
-              */
-              (function() { // DON'T EDIT BELOW THIS LINE
-              var d = document, s = d.createElement('script');
-              s.src = 'https://https-nihil-ncunia-tistory-com.disqus.com/embed.js';
-              s.setAttribute('data-timestamp', +new Date());
-              (d.head || d.body).appendChild(s);
-              })();
-              </script>
-              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-            </div>
-          </div>
+          </article>
         </s_page_rep>
 
         <!-- 태그 클라우드 -->
         <s_tag>
-          <div class="blogTagCloud">
-            <p class="contentTitle"><i class="fas fa-tags"></i> 태그 클라우드</p>
-            <div class="tagItemBox">
-              <s_tag_rep>
-                <span><a href="[##_tag_link_##]" class="[##_tag_class_##]"><i class="fas fa-tag"></i> [##_tag_name_##]</a></span>
-              </s_tag_rep>
+          <section>
+            <div class="blogTagCloud">
+              <p class="contentTitle"><i class="fas fa-tags"></i> 태그 클라우드</p>
+              <div class="tagItemBox">
+                <s_tag_rep>
+                  <span><a href="[##_tag_link_##]" class="[##_tag_class_##]"><i class="fas fa-tag"></i> [##_tag_name_##]</a></span>
+                </s_tag_rep>
+              </div>
             </div>
-          </div>
+          </section>
         </s_tag>
 
         <!-- 게스트북 -->
         <s_guest>
-          <div class="blogGuestBook">
-            <p class="contentTitle"><i class="fas fa-book"></i> 게스트북</p>
-            <div class="googleTopAd">
-              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-              <!-- 뉴링크1 -->
-              <ins class="adsbygoogle"
-                  style="display:block"
-                  data-ad-client="ca-pub-9256396675875954"
-                  data-ad-slot="6293569744"
-                  data-ad-format="link"
-                  data-full-width-responsive="true"></ins>
-              <script>
-                  (adsbygoogle = window.adsbygoogle || []).push({});
-              </script>
+          <section>
+            <div class="blogGuestBook">
+              <p class="contentTitle"><i class="fas fa-book"></i> 게스트북</p>
+              <!-- <div class="googleTopAd">
+                광고 자리
+              </div> -->
+              <p class="contentDecription">
+                남기실 말이 있으시면 여기에 남겨주시면 됩니다. 아래의 디스커스에 덧글을 작성하면 메일로 알림이 옵니다. 빠르게 확인하고 있으니 언제든 남겨주시면 됩니다.
+              </p>
+              <div class="contentComment">
+                <div id="disqus_thread"></div>
+                <script>
+  
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://https-nihil-ncunia-tistory-com.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              </div>
             </div>
-            <p class="contentDecription">
-              남기실 말이 있으시면 여기에 남겨주시면 됩니다. 아래의 디스커스에 덧글을 작성하면 메일로 알림이 옵니다. 빠르게 확인하고 있으니 언제든 남겨주시면 됩니다.
-            </p>
-            <div class="contentComment">
-              <div id="disqus_thread"></div>
-              <script>
-
-              /**
-              *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-              *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-              /*
-              var disqus_config = function () {
-              this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-              this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-              };
-              */
-              (function() { // DON'T EDIT BELOW THIS LINE
-              var d = document, s = d.createElement('script');
-              s.src = 'https://https-nihil-ncunia-tistory-com.disqus.com/embed.js';
-              s.setAttribute('data-timestamp', +new Date());
-              (d.head || d.body).appendChild(s);
-              })();
-              </script>
-              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-            </div>
-          </div>
+          </section>
         </s_guest>
 
         <!-- 페이징 -->
         <s_paging>
-          <div id="blogPaging">
-            <a [##_prev_page_##] class="[##_no_more_prev_##]"><i class="fas fa-arrow-left"></i></a>
-            <s_paging_rep>
-              <a [##_paging_rep_link_##] class="num">[##_paging_rep_link_num_##]</a>
-            </s_paging_rep>
-            <a [##_next_page_##] class="[##_no_more_next_##]"><i class="fas fa-arrow-right"></i></a>
-          </div>
+          <section>
+            <div id="blogPaging">
+              <a [##_prev_page_##] class="[##_no_more_prev_##]"><i class="fas fa-arrow-left"></i></a>
+              <s_paging_rep>
+                <a [##_paging_rep_link_##] class="num">[##_paging_rep_link_num_##]</a>
+              </s_paging_rep>
+              <a [##_next_page_##] class="[##_no_more_next_##]"><i class="fas fa-arrow-right"></i></a>
+            </div>
+          </section>
         </s_paging>
 
-        <div class="blogBottomGoogleAD">
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <!-- 뉴디스플레이2 -->
-          <ins class="adsbygoogle"
-              style="display:block"
-              data-ad-client="ca-pub-9256396675875954"
-              data-ad-slot="7806139574"
-              data-ad-format="auto"
-              data-full-width-responsive="true"></ins>
-          <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-        </div>
+        <!-- <div class="blogBottomGoogleAD">
+          광고자리
+        </div> -->
+      </main>
 
-        <!-- 하단 사이드바 -->
+      <!-- 하단 사이드바 -->
+      <aside id="blogSideBar">
         <s_sidebar>
-          <div id="blogSideBar">
-
-            <s_sidebar_element>
-              <!-- 카테고리 -->
-              <div class="gotoTop" id="category">
-                <a href="#top">포스트로</a>
+          <s_sidebar_element>
+            <!-- 카테고리 -->
+            <div class="gotoTop" id="category">
+              <a href="#top">포스트로</a>
+            </div>
+            <div class="sidebarItem">
+              <p class="sidebarTitle"><i class="fas fa-list"></i> 카테고리</p>
+              <div class="sidebarContent">
+                [##_category_list_##]
               </div>
-              <div class="sidebarItem">
-                <p class="sidebarTitle"><i class="fas fa-list"></i> 카테고리</p>
-                <div class="sidebarContent">
-                  [##_category_list_##]
-                </div>
-              </div>
-            </s_sidebar_element>
+            </div>
+          </s_sidebar_element>
 
-            <s_sidebar_element>
-              <!-- 최근 공지 -->
-              <div class="sidebarItem">
-              <s_rct_notice>
-                <p class="sidebarTitle"><i class="fas fa-exclamation-circle"></i> 최근 공지사항</p>
-                <div class="sidebarContent">
-                  <s_rct_notice_rep>
-                    <a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a>
-                  </s_rct_notice_rep>
-                </div>
-              </s_rct_notice>
+          <s_sidebar_element>
+            <!-- 최근 공지 -->
+            <div class="sidebarItem">
+            <s_rct_notice>
+              <p class="sidebarTitle"><i class="fas fa-exclamation-circle"></i> 최근 공지사항</p>
+              <div class="sidebarContent">
+                <s_rct_notice_rep>
+                  <a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a>
+                </s_rct_notice_rep>
               </div>
-            </s_sidebar_element>
+            </s_rct_notice>
+            </div>
+          </s_sidebar_element>
 
-            <s_sidebar_element>
-              <!-- 최근 포스트 -->
-              <div class="sidebarItem">
-                <p class="sidebarTitle"><i class="fas fa-pen"></i> 최근 포스트</p>
-                <div class="sidebarContent">
-                  <s_rctps_rep>
-                    <a href="[##_rctps_rep_link_##]">[##_rctps_rep_title_##]</a>
-                  </s_rctps_rep>
-                </div>
+          <s_sidebar_element>
+            <!-- 최근 포스트 -->
+            <div class="sidebarItem">
+              <p class="sidebarTitle"><i class="fas fa-pen"></i> 최근 포스트</p>
+              <div class="sidebarContent">
+                <s_rctps_rep>
+                  <a href="[##_rctps_rep_link_##]">[##_rctps_rep_title_##]</a>
+                </s_rctps_rep>
               </div>
-            </s_sidebar_element>
+            </div>
+          </s_sidebar_element>
 
-            <s_sidebar_element>
-              <!-- 아카이브 -->
-              <div class="sidebarItem">
-                <p class="sidebarTitle"><i class="fas fa-archive"></i> 아카이브</p>
-                <div class="sidebarContent">
-                  <s_archive_rep>
-                    <a href="[##_archive_rep_link_##]">
-                      [##_archive_rep_date_##]<span class="cnt">([##_archive_rep_count_##])</span>
-                    </a>
-                  </s_archive_rep>
-                </div>
+          <s_sidebar_element>
+            <!-- 아카이브 -->
+            <div class="sidebarItem">
+              <p class="sidebarTitle"><i class="fas fa-archive"></i> 아카이브</p>
+              <div class="sidebarContent">
+                <s_archive_rep>
+                  <a href="[##_archive_rep_link_##]">
+                    [##_archive_rep_date_##]<span class="cnt">([##_archive_rep_count_##])</span>
+                  </a>
+                </s_archive_rep>
               </div>
-            </s_sidebar_element>
+            </div>
+          </s_sidebar_element>
 
-            <s_sidebar_element>
-              <!-- 방문자 카운터 -->
-              <div class="sidebarItem">
-                <p class="sidebarTitle"><i class="fas fa-globe"></i> 방문자 카운터</p>
-                <div class="sidebarContent">
-                  <p class="today">오늘 방문자 : [##_count_today_##]</p>
-                  <p class="yesterday">어제 방문자 : [##_count_yesterday_##]</p>
-                  <p class="total">전체 방문자 : [##_count_total_##] </p>
-                </div>
+          <s_sidebar_element>
+            <!-- 방문자 카운터 -->
+            <div class="sidebarItem">
+              <p class="sidebarTitle"><i class="fas fa-globe"></i> 방문자 카운터</p>
+              <div class="sidebarContent">
+                <p class="today">오늘 방문자 : [##_count_today_##]</p>
+                <p class="yesterday">어제 방문자 : [##_count_yesterday_##]</p>
+                <p class="total">전체 방문자 : [##_count_total_##] </p>
               </div>
-            </s_sidebar_element>
-
-          </div>
+            </div>
+          </s_sidebar_element>
         </s_sidebar>
-      </div>
+      </aside>
 
       <!-- 하단 스킨 제작, 저작권 -->
-      <div id="blogBottom">
-        <p id="nihil">© NIHIL Blog.</p>
-        <p id="power">Powered by <a href="https://www.tistory.com/">Tistory</a></p>
-      </div>
+      <footer>
+        <div id="blogBottom">
+          <p id="nihil">© NIHIL Blog.</p>
+          <p id="power">Powered by <a href="https://www.tistory.com/">Tistory</a></p>
+        </div>
+      </footer>
     </s_t3>
   </div>
 </body>
