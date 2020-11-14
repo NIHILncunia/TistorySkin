@@ -505,7 +505,8 @@ input#entry4password::placeholder {
 }
 
 .contentArticle p {
-  margin: 30px 0px !important
+  margin: 30px 0px !important;
+  text-indent: 15px;
 }
 
 .container_postbtn {
@@ -556,6 +557,7 @@ input#entry4password::placeholder {
 
 .contentDecription {
   margin-bottom: 60px;
+  text-indent: 15px;
 }
 
 /* 페이징 */

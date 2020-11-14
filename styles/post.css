@@ -68,6 +68,29 @@
   color: #ffffff;
 }
 
+.messageRed > p:nth-child(1),
+.messageBlue > p:nth-child(1),
+.messageGreen > p:nth-child(1),
+.messageYellow > p:nth-child(1) {
+  margin-top: 0px !important;
+}
+
+.messageRed > p:nth-last-child(1),
+.messageBlue > p:nth-last-child(1),
+.messageGreen > p:nth-last-child(1),
+.messageYellow > p:nth-last-child(1) {
+  margin-bottom: 0px !important;
+}
+
+.messageRed > p,
+.messageBlue > p,
+.messageGreen > p,
+.messageYellow > p {
+  text-indent: 10px;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
 .messageRed:before,
 .messageBlue:before,
 .messageGreen:before,
