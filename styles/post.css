@@ -42,7 +42,7 @@
 .messageYellow {
   padding: 10px;
   border-radius: 10px;
-  text-align: center;
+  text-align: justify;
   margin-bottom: 30px;
   margin-top: 30px;
   text-shadow: 0.5px 0.5px 4px #000000;
@@ -77,6 +77,7 @@
   margin-bottom: 10px;
   display:block;
   font-size: 40pt;
+  text-align: center;
 }
 
 .messageRed:before {
@@ -396,5 +397,46 @@
   padding: 0px 5px;
   color: #ffffff;
   border-radius: 20px;
+  font-weight: 900;
+}
+
+.listBody, .listBody ul {
+  list-style-type: none;
+}
+
+.listBody {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.listBody > li:before {
+  content: "\f35a";
+  font-family: "Font Awesome 5 Free";
+  margin-right: 10px;
+  font-weight: 900;
+}
+
+.listBody li {
+  margin-bottom: 5px;
+}
+
+.listBody > ul > li {
+  margin-left: 30px;
+}
+
+.listBody > ul > li:before {
+  content: "\f35a";
+  font-family: "Font Awesome 5 Free";
+  margin-right: 10px;
+}
+
+.listBody > ul > ul > li {
+  margin-left: 60px;
+}
+
+.listBody > ul > ul > li:before {
+  content: "\f061";
+  font-family: "Font Awesome 5 Free";
+  margin-right: 10px;
   font-weight: 900;
 }
