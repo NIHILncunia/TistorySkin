@@ -242,8 +242,9 @@
   background: #dddddd;
   color: #333333;
   padding: 0px 5px;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid #33333350;
+  font-weight: 600;
 }
 
 .postMoreBox {

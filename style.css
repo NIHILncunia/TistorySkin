@@ -66,10 +66,13 @@ pre {
   width: 100% !important;
   box-sizing: border-box !important;
   border-radius: 10px !important;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  white-space: pre-wrap;
 }
 
 code {
-  padding: 5px !important;
+  padding: 10px !important;
 }
 
 pre,
@@ -82,6 +85,12 @@ code .hljs-string {
   font-family: "CascadiaCode", "Noto Sans KR", sans-serif !important;
 }
 
+/* 이미지 */
+figure {
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+}
+
 /* 반응형 처리 */
 @media (min-width: 1px) and (max-width: 600px) {
   .contentArticle,
@@ -92,6 +101,7 @@ code .hljs-string {
   .sidebarContent,
   .gotoTop > a,
   .gotoCategory > a,
+  .gotoNitice > a,
   .itemName,
   .itemDate,
   .topMenu a,
@@ -121,6 +131,7 @@ code .hljs-string {
   .sidebarContent,
   .gotoTop > a,
   .gotoCategory > a,
+  .gotoNitice > a,
   .itemName,
   .itemDate,
   .topMenu a,
@@ -266,13 +277,15 @@ code .hljs-string {
 
 /* 이동 버튼 */
 #blogSideBar > .gotoTop,
-#blogMiddle > .gotoCategory {
+#blogMiddle > .gotoCategory,
+#blogMiddle > .gotoNitice {
   display: block;
   text-align: right;
 }
 
 .gotoTop > a,
-.gotoCategory > a {
+.gotoCategory > a,
+.gotoNitice > a {
   background: #333333;
   padding: 5px 10px;
   border-radius: 20px;
@@ -284,7 +297,8 @@ code .hljs-string {
 }
 
 .gotoTop > a:before,
-.gotoCategory > a:before {
+.gotoCategory > a:before,
+.gotoNitice > a:before {
   content: "\f0c1";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -292,7 +306,8 @@ code .hljs-string {
 }
 
 .gotoTop > a:hover,
-.gotoCategory > a:hover {
+.gotoCategory > a:hover,
+.gotoNitice > a:hover {
   color: #ffffff;
   background: #333333;
 }
