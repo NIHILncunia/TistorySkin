@@ -466,3 +466,12 @@
   margin-right: 10px;
   font-weight: 900;
 }
+
+.cp_embed_wrapper {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.cp_embed_wrapper iframe {
+  border-radius: 10px;
+}

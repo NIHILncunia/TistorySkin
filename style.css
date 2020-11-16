@@ -513,6 +513,10 @@ input#entry4password::placeholder {
   display: none;
 }
 
+.another_category {
+  display: none;
+}
+
 /* 태그 */
 .contentTag {
   color: #ffffff;
