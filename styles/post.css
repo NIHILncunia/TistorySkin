@@ -91,6 +91,13 @@
   margin-bottom: 10px !important;
 }
 
+.messageRed > p > strong,
+.messageBlue > p > strong,
+.messageGreen > p > strong,
+.messageYellow > p > strong {
+  font-weight: 900;
+}
+
 .messageRed:before,
 .messageBlue:before,
 .messageGreen:before,
@@ -474,4 +481,9 @@
 
 .cp_embed_wrapper iframe {
   border-radius: 10px;
+}
+
+.postKeyowrds {
+  color: #888888;
+  font-size: 10pt;
 }
