@@ -94,7 +94,11 @@
 .messageRed > p > strong,
 .messageBlue > p > strong,
 .messageGreen > p > strong,
-.messageYellow > p > strong {
+.messageYellow > p > strong,
+.messageRed > p > b,
+.messageBlue > p > b,
+.messageGreen > p > b,
+.messageYellow > p > b {
   font-weight: 900;
 }
 
