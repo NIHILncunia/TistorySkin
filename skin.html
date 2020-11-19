@@ -353,6 +353,33 @@
           </section>
         </s_guest>
 
+        <!-- 태그 쉼표 제거 -->
+        <script>
+          function rmvComma() {
+            const rmvTagComma = document.getElementsByClassName("contentTag");
+            if (window.location.href.includes('pages')) {
+              return;
+            } else if (window.location.href.includes('guestbook')) {
+              return;
+            } else if (window.location.href.includes('tag')) {
+              return;
+            } else if (window.location.href.includes('notice')) {
+              return;
+            } else if (window.location.href.includes('archive')) {
+              return;
+            } else if (window.location.href.includes('category')) {
+              return;
+            } else if (window.location.href.includes('search')) {
+              return;
+            } else {
+              if(rmvTagComma) {
+                rmvTagComma[0].innerHTML = rmvTagComma[0].innerHTML.replace(/,/g, " ");
+              }
+            }
+          }
+          rmvComma();
+        </script>
+
         <!-- 페이징 -->
         <s_paging>
           <section>

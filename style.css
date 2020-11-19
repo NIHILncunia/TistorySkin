@@ -91,6 +91,12 @@ figure {
   margin-bottom: 30px !important;
 }
 
+.contentArticle figure img {
+  border-radius: 20px;
+  box-sizing: border-box;
+  border: 5px solid #333333;
+}
+
 /* 반응형 처리 */
 @media (min-width: 1px) and (max-width: 600px) {
   .contentArticle,
@@ -371,6 +377,18 @@ figure {
   display: none;
 }
 
+.itemDate {
+  background: #333333;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 0px 10px;
+}
+
+.listItem a:hover > .itemDate {
+  background: #ffffff;
+  color: #333333;
+}
+
 /* 본문 */
 .blogPost,
 .blogNoticePost,
@@ -523,7 +541,7 @@ input#entry4password::placeholder {
   color: #ffffff;
   margin-bottom: 60px;
   text-align:justify;
-  line-height: 2.0;
+  line-height: 1.8;
 }
 
 .contentTag a {
@@ -531,6 +549,7 @@ input#entry4password::placeholder {
   border: 1px solid #333333;
   color: #333333;
   border-radius: 10px;
+  margin-right: -3px;
 }
 
 .contentTag a:hover {
