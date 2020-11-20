@@ -500,3 +500,29 @@
   color: #888888;
   font-size: 10pt;
 }
+
+.postQuoteBox {
+  padding: 0px 5px;
+  background: #888888;
+  border: 1px solid #33333350;
+  border-radius: 5px;
+  color: #ffffff;
+  font-style: italic;
+}
+
+.postQuoteBox::before {
+  content: '\f10d';
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  margin-right: 5px;
+  vertical-align: super;
+  font-size: small;
+}
+.postQuoteBox::after {
+  content: '\f10e';
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  margin-left: 5px;
+  vertical-align: super;
+  font-size: small;
+}
