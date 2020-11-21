@@ -446,7 +446,8 @@
   font-weight: 900;
 }
 
-.listBody, .listBody ul {
+.listBody,
+.listBody ul {
   list-style-type: none;
 }
 
@@ -463,24 +464,25 @@
 }
 
 .listBody li {
+  margin-top: 5px;
   margin-bottom: 5px;
 }
 
-.listBody > ul > li {
+.listBody > li > ul > li {
   margin-left: 30px;
 }
 
-.listBody > ul > li:before {
+.listBody > li > ul > li:before {
   content: "\f35a";
   font-family: "Font Awesome 5 Free";
   margin-right: 10px;
 }
 
-.listBody > ul > ul > li {
+.listBody > li > ul > li > ul > li {
   margin-left: 60px;
 }
 
-.listBody > ul > ul > li:before {
+.listBody > li > ul > li > ul > li:before {
   content: "\f061";
   font-family: "Font Awesome 5 Free";
   margin-right: 10px;
