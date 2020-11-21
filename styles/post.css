@@ -1,3 +1,5 @@
+
+/* 화면 좁을때 */
 @media (min-width: 1px) and (max-width: 600px) {
   .quoteBlock > blockquote,
   .btn-toggle-moreless {
@@ -17,6 +19,7 @@
   }
 }
 
+/* 화면 넓을 때 */
 @media (min-width: 601px) {
   .quoteBlock > blockquote,
   .btn-toggle-moreless {
@@ -36,6 +39,7 @@
   }
 }
 
+/* 메시지 박스 */
 .messageRed,
 .messageBlue,
 .messageGreen,
@@ -130,6 +134,7 @@
   content: "\f06a";
 }
 
+/* 외부 링크 */
 .linkNomal {
   border: 1px solid #11b32c;
   color: #11b32c;
@@ -150,6 +155,7 @@
   margin-left: 5px;
 }
 
+/* 유튜브 링크 */
 .linkYoutube {
   border: 1px solid #c30505;
   color: #c30505;
@@ -170,6 +176,7 @@
   margin-left: 5px;
 }
 
+/* 내부 링크 */
 .linkBlog {
   border: 1px solid #218cd8;
   color: #218cd8;
@@ -190,6 +197,7 @@
   margin-left: 5px;
 }
 
+/* 인용 블럭 */
 .quoteBlock > blockquote {
   background: #dddddd;
   padding: 10px;
@@ -220,6 +228,7 @@
   font-style: italic;
 }
 
+/* 구분선 */
 .postLine {
   border: none;
   text-align: center;
@@ -234,6 +243,7 @@
   font-weight: 900;
 }
 
+/* 제목들 */
 .heading1 {
   font-weight: 900;
   color: #ffffff;
@@ -273,6 +283,7 @@
   font-weight: 900;
 }
 
+/* 단어 강조 */
 .postWordBox {
   background: #dddddd;
   color: #333333;
@@ -283,6 +294,7 @@
   text-indent: 0px;
 }
 
+/* 코드 강조 */
 .postCodeBox {
   padding: 0px 5px !important;
   border-radius: 5px;
@@ -294,6 +306,7 @@
   color: #ffffff;
 }
 
+/* 더보기 버튼 */
 .postMoreBox {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -348,6 +361,7 @@
   margin-bottom: 0px !important;
 }
 
+/* 유튜브 박스 */
 .postYoutubeBox {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -387,10 +401,12 @@
   border-radius: 20px;
 }
 
+/* 이미지 어드바이스 숨기기 */
 .hiddenLine {
   display: none;
 }
 
+/* 일본어 블럭 */
 .japaneseBlock {
   padding: 10px;
   background: #333333;
@@ -421,6 +437,7 @@
   font-weight: 900;
 }
 
+/* 일본어 단어 블럭 */
 .jpWord {
   padding: 10px;
   background: #333333;
@@ -446,6 +463,7 @@
   font-weight: 900;
 }
 
+/* 순서 없는 목록 */
 .listBody,
 .listBody ul {
   list-style-type: none;
@@ -479,7 +497,7 @@
 }
 
 .listBody > li > ul > li > ul > li {
-  margin-left: 60px;
+  margin-left: 30px;
 }
 
 .listBody > li > ul > li > ul > li:before {
@@ -489,6 +507,62 @@
   font-weight: 900;
 }
 
+/* 순서 있는 목록 */
+.orderListBody,
+.orderListBody ol {
+  list-style-type: none;
+  counter-reset: number;
+}
+
+.orderListBody {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.orderListBody li {
+  counter-increment: number;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.orderListBody li:before {
+  content: counter(number);
+  margin-right: 10px;
+}
+
+.orderListBody > li:before {
+  background: #333333;
+  padding: 0px 10px;
+  color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #33333350;
+}
+
+.orderListBody > li > ol > li {
+  margin-left: 30px;
+}
+
+.orderListBody > li > ol > li:before {
+  background: #666666;
+  padding: 0px 10px;
+  color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #33333350;
+}
+
+.orderListBody > li > ol > li > ol > li {
+  margin-left: 30px;
+}
+
+.orderListBody > li > ol > li > ol > li:before {
+  background: #999999;
+  padding: 0px 10px;
+  color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #33333350;
+}
+
+/* 코드펜 관련 */
 .cp_embed_wrapper {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -498,11 +572,13 @@
   border-radius: 10px;
 }
 
+/* 포스트 키워드 모음 */
 .postKeyowrds {
   color: #888888;
   font-size: 10pt;
 }
 
+/* 한줄 인용 박스 */
 .postQuoteBox {
   padding: 0px 5px;
   background: #888888;
