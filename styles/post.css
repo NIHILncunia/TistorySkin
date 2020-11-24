@@ -472,6 +472,10 @@
 .listBody {
   margin-top: 30px;
   margin-bottom: 30px;
+  background: #eeeeee;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid #33333320;
 }
 
 .listBody > li:before {
@@ -517,6 +521,10 @@
 .orderListBody {
   margin-top: 30px;
   margin-bottom: 30px;
+  background: #eeeeee;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid #33333320;
 }
 
 .orderListBody li {
