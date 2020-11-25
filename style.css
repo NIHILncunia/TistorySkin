@@ -396,7 +396,7 @@ figure {
 .blogTagCloud,
 .blogPagePost,
 .blogGuestBook {
-  padding: 20px;
+  padding: 10px;
   background: #ffffff;
   border-radius: 20px;
   box-shadow: 0px 0px 10px -4px #333333;
@@ -523,9 +523,10 @@ input#entry4password::placeholder {
 }
 
 .contentArticle p {
-  margin: 30px 0px !important;
+  margin: 20px 0px !important;
   text-indent: 15px;
   line-height: 1.8;
+  letter-spacing: -1px;
 }
 
 .container_postbtn {
@@ -664,7 +665,7 @@ input#entry4password::placeholder {
 }
 .sidebarItem {
   margin-bottom: 60px;
-  padding: 20px;
+  padding: 10px;
   background: #ffffff;
   border-radius: 20px;
   box-shadow: 0px 0px 10px -4px #333333;
@@ -708,9 +709,9 @@ input#entry4password::placeholder {
 .sidebarContent > ul > li > a {
   border: 1px solid #333333;
   color: #333333;
-  padding: 5px;
+  padding: 0px 5px;
   display: block;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 5px;
   margin-top: 5px;
 }
@@ -718,23 +719,23 @@ input#entry4password::placeholder {
 .sidebarContent > ul > li > ul > li > a {
   border: 1px solid #333333;
   color: #333333;
-  padding: 5px;
+  padding: 0px 5px;
   display: block;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 5px;
   margin-top: 5px;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .sidebarContent > ul > li > ul > li > ul > li > a {
   border: 1px solid #333333;
   color: #333333;
-  padding: 5px;
+  padding: 0px 5px;
   display: block;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 5px;
   margin-top: 5px;
-  margin-left: 60px;
+  margin-left: 40px;
 }
 
 .sidebarContent > ul > li > a:hover,
@@ -750,9 +751,9 @@ input#entry4password::placeholder {
 
 /* 최근 공지 */
 .sidebarContent a {
-  padding: 5px;
+  padding: 0px 5px;
   border: 1px solid #333333;
-  border-radius: 10px;
+  border-radius: 5px;
   display: block;
   color: #333333;
   margin-top: 5px;

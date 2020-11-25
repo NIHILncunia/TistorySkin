@@ -44,11 +44,11 @@
 .messageBlue,
 .messageGreen,
 .messageYellow {
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
   text-align: justify;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .messageRed {
@@ -140,7 +140,8 @@
   color: #11b32c;
   padding: 0px 5px;
   margin-right: 5px;
-  border-radius: 10px;
+  border-radius: 5px;
+  font-size: 90%;
 }
 
 .linkNomal:hover {
@@ -161,7 +162,8 @@
   color: #c30505;
   padding: 0px 5px;
   margin-right: 5px;
-  border-radius: 10px;
+  border-radius: 5px;
+  font-size: 90%;
 }
 
 .linkYoutube:hover {
@@ -182,7 +184,8 @@
   color: #218cd8;
   padding: 0px 5px;
   margin-right: 5px;
-  border-radius: 10px;
+  border-radius: 5px;
+  font-size: 90%;
 }
 
 .linkBlog:hover {
@@ -198,12 +201,17 @@
 }
 
 /* 인용 블럭 */
+.quoteBlock {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .quoteBlock > blockquote {
-  background: #dddddd;
-  padding: 10px;
-  border: 1px solid #888888;
+  background: #888888;
+  padding: 5px;
+  border: 1px solid #33333350;
   border-radius: 10px;
-  color: #888888;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -224,8 +232,10 @@
 .quoteBlock > p {
   margin-top: 5px !important;
   text-align: right;
-  color: #888888;
+  color: #333333;
   font-style: italic;
+  line-height: 1;
+  font-weight: 600;
 }
 
 /* 구분선 */
@@ -244,14 +254,20 @@
 }
 
 /* 제목들 */
+
+.heading1,
+.heading2,
+.heading3 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .heading1 {
   font-weight: 900;
   color: #ffffff;
   background: #333333;
   padding: 5px 10px;
   border-radius: 10px;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .heading2 {
@@ -260,8 +276,6 @@
   background: #666666;
   padding: 5px 10px;
   border-radius: 10px;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .heading3 {
@@ -270,8 +284,6 @@
   background: #888888;
   padding: 5px 10px;
   border-radius: 10px;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .heading1:before,
@@ -292,6 +304,7 @@
   border: 1px solid #33333350;
   font-weight: 600;
   text-indent: 0px;
+  font-size: 90%;
 }
 
 /* 코드 강조 */
@@ -304,24 +317,25 @@
   background: #666666;
   font-family: "Noto Sans KR", "Noto Sans JP", sans-serif !important;
   color: #ffffff;
+  font-size: 90%;
 }
 
 /* 더보기 버튼 */
 .postMoreBox {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
   box-shadow: 0px 0px 10px -2px #333333;
 }
 
 .btn-toggle-moreless,
 .postMoreBox > div[class=""] > .btn-toggle-moreless {
-  padding: 10px;
+  padding: 5px;
   background: #333333 !important;
   display:block;
   text-align: center;
   color: #ffffff !important;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .postMoreBox > div[class=""] > .btn-toggle-moreless:before {
@@ -337,41 +351,41 @@
 }
 
 .postMoreBox > div[class="open"] > .btn-toggle-moreless {
-  padding: 10px;
+  padding: 5px;
   background: #333333 !important;
   display:block;
   text-align: center;
   color: #ffffff !important;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .moreless-content {
-  padding: 10px;
-  border-radius: 0px 0px 20px 20px;
+  padding: 5px;
+  border-radius: 0px 0px 10px 10px;
   background: #ffffff;
 }
 
 .moreless-content > *:nth-child(1) {
   margin-top: 0px !important;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .moreless-content > *:nth-last-child(1) {
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 0px !important;
 }
 
 /* 유튜브 박스 */
 .postYoutubeBox {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .postYoutubeBox > .boxName {
-  padding: 10px;
+  padding: 5px;
   color: #ffffff;
   background: #c00c00;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
   text-align: center;
   font-weight: 900;
 }
@@ -387,7 +401,7 @@
   padding: 0px 5px 5px 5px;
   box-sizing: border-box;
   background: #c00c00;
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 0px 0px 10px 10px;
 
   position: relative;
   height: 0px;
@@ -398,7 +412,7 @@
   position: absolute;
   width: calc(100% - 10px);
   height: calc(100% - 5px);
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 /* 이미지 어드바이스 숨기기 */
@@ -488,6 +502,7 @@
 .listBody li {
   margin-top: 5px;
   margin-bottom: 5px;
+  letter-spacing: -1px;
 }
 
 .listBody > li > ul > li {
@@ -531,19 +546,20 @@
   counter-increment: number;
   margin-top: 5px;
   margin-bottom: 5px;
+  letter-spacing: -1px;
 }
 
 .orderListBody li:before {
-  content: counter(number);
+  content: counter(number) ".";
   margin-right: 10px;
 }
 
 .orderListBody > li:before {
   background: #333333;
-  padding: 0px 10px;
   color: #ffffff;
+  font-weight: 900;
+  padding: 0px 5px;
   border-radius: 5px;
-  border: 1px solid #33333350;
 }
 
 .orderListBody > li > ol > li {
@@ -551,11 +567,11 @@
 }
 
 .orderListBody > li > ol > li:before {
-  background: #666666;
-  padding: 0px 10px;
+  background: #555555;
   color: #ffffff;
+  font-weight: 900;
+  padding: 0px 5px;
   border-radius: 5px;
-  border: 1px solid #33333350;
 }
 
 .orderListBody > li > ol > li > ol > li {
@@ -563,11 +579,11 @@
 }
 
 .orderListBody > li > ol > li > ol > li:before {
-  background: #999999;
-  padding: 0px 10px;
+  background: #888888;
   color: #ffffff;
+  font-weight: 900;
+  padding: 0px 5px;
   border-radius: 5px;
-  border: 1px solid #33333350;
 }
 
 /* 코드펜 관련 */
@@ -593,22 +609,18 @@
   border: 1px solid #33333350;
   border-radius: 5px;
   color: #ffffff;
-  font-style: italic;
+  font-size: 90%;
 }
 
 .postQuoteBox::before {
   content: '\f10d';
   font-weight: 900;
   font-family: "Font Awesome 5 Free";
-  margin-right: 5px;
-  vertical-align: super;
-  font-size: small;
+  margin-right: 10px;
 }
 .postQuoteBox::after {
   content: '\f10e';
   font-weight: 900;
   font-family: "Font Awesome 5 Free";
-  margin-left: 5px;
-  vertical-align: super;
-  font-size: small;
+  margin-left: 10px;
 }
