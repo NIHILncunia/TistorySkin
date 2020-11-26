@@ -95,6 +95,7 @@ figure {
   border-radius: 20px;
   box-sizing: border-box;
   border: 5px solid #333333;
+  background: #333333;
 }
 
 /* 반응형 처리 */
@@ -542,7 +543,7 @@ input#entry4password::placeholder {
   color: #ffffff;
   margin-bottom: 60px;
   text-align:justify;
-  line-height: 1.8;
+  line-height: 1.5;
 }
 
 .contentTag a {
@@ -551,11 +552,19 @@ input#entry4password::placeholder {
   color: #333333;
   border-radius: 10px;
   margin-right: -3px;
+  font-size: 90%;
 }
 
 .contentTag a:hover {
   color: #ffffff;
   background: #333333;
+}
+
+.contentTag a:before {
+  content: '\f02b';
+  margin-right: 5px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
 }
 
 /* 덧글 */
