@@ -565,7 +565,7 @@ input#entry4password::placeholder {
   padding: 0px 10px;
   border: 1px solid #333333;
   color: #333333;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-right: -3px;
   font-size: 90%;
 }
