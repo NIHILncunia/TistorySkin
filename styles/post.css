@@ -487,7 +487,7 @@
   margin-top: 30px;
   margin-bottom: 30px;
   background: #eeeeee;
-  padding: 5px 10px;
+  padding: 5px;
   border-radius: 10px;
   border: 1px solid #33333320;
 }
@@ -502,6 +502,18 @@
 .listBody li {
   margin-top: 5px;
   margin-bottom: 5px;
+  letter-spacing: -1px;
+}
+
+.listBody > li:nth-child(1) {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  letter-spacing: -1px;
+}
+
+.listBody > li:nth-last-child(1) {
+  margin-top: 5px;
+  margin-bottom: 0px;
   letter-spacing: -1px;
 }
 
@@ -537,7 +549,7 @@
   margin-top: 30px;
   margin-bottom: 30px;
   background: #eeeeee;
-  padding: 5px 10px;
+  padding: 5px;
   border-radius: 10px;
   border: 1px solid #33333320;
 }
@@ -546,6 +558,20 @@
   counter-increment: number;
   margin-top: 5px;
   margin-bottom: 5px;
+  letter-spacing: -1px;
+}
+
+.orderListBody > li:nth-child(1) {
+  counter-increment: number;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  letter-spacing: -1px;
+}
+
+.orderListBody > li:nth-last-child(1) {
+  counter-increment: number;
+  margin-top: 5px;
+  margin-bottom: 0px;
   letter-spacing: -1px;
 }
 
@@ -584,6 +610,53 @@
   font-weight: 900;
   padding: 0px 5px;
   border-radius: 5px;
+}
+
+/* 용어 설명 목록 */
+.descListBody {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: #eeeeee;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid #33333320;
+}
+
+.descListBody > dt {
+  background: #666666;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px 5px 0px 0px;
+  font-weight: 600;
+}
+
+.descListBody > dt:before {
+  content: '\f27a';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.descListBody > dt:nth-child(1) {
+  margin-top: 0px;
+}
+
+.descListBody > dd {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border: 1px solid #33333350;
+  border-radius: 0px 0px 5px 5px;
+  background: #ffffff;
+}
+
+.descListBody > dd:before {
+  content: '\f022';
+  font-family: "Font Awesome 5 Free";
+  margin-right: 10px;
+}
+
+.descListBody > dd:nth-last-child(1) {
+  margin-bottom: 0px;
 }
 
 /* 코드펜 관련 */
