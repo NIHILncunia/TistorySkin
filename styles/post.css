@@ -697,3 +697,144 @@
   font-family: "Font Awesome 5 Free";
   margin-left: 10px;
 }
+
+/* 리뷰 점수 */
+
+.starScore {
+  background: #333333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  text-align: center;
+  color: #fff000;
+  border-radius: 5px;
+  font-size: 150%;
+}
+
+.starScore .scoreTitle {
+  font-weight: 600;
+  margin: 0px 0px 0px 0px !important;
+  text-indent: 0px;
+}
+
+.starScore .s05,
+.starScore .s1,
+.starScore .s15,
+.starScore .s2,
+.starScore .s25,
+.starScore .s3,
+.starScore .s35,
+.starScore .s4,
+.starScore .s45,
+.starScore .s5 {
+  margin: 0px 0px 0px 0px !important;
+  text-indent: 0px;
+}
+
+.starScore .s05:before {
+  content: '\f5c0';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+}
+
+.starScore .s05:after {
+  content: '\f005 \f005 \f005 \f005';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 500;
+}
+
+.starScore .s1:before {
+  content: '\f005';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.starScore .s1:after {
+  content: '\f005 \f005 \f005 \f005';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 500;
+}
+
+.starScore .s15:before {
+  content: '\f005 \f5c0';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.starScore .s15:after {
+  content: '\f005 \f005 \f005';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 500;
+}
+
+.starScore .s2:before {
+  content: '\f005 \f005';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.starScore .s2:after {
+  content: '\f005 \f005 \f005';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 500;
+}
+
+.starScore .s25:before {
+  content: '\f005 \f005 \f5c0';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.starScore .s25:after {
+  content: '\f005 \f005';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 500;
+}
+
+.starScore .s3:before {
+  content: '\f005 \f005 \f005';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.starScore .s3:after {
+  content: '\f005 \f005';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 500;
+}
+
+.starScore .s35:before {
+  content: '\f005 \f005 \f005 \f5c0';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.starScore .s35:after {
+  content: '\f005';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 500;
+}
+
+.starScore .s4:before {
+  content: '\f005 \f005 \f005 \f005';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.starScore .s4:after {
+  content: '\f005';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 500;
+}
+
+.starScore .s45:before {
+  content: '\f005 \f005 \f005 \f005 \f5c0';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.starScore .s5:before {
+  content: '\f005 \f005 \f005 \f005 \f005';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
