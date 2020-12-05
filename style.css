@@ -120,10 +120,9 @@ figure {
   .gotoTop > a,
   .gotoCategory > a,
   .gotoNitice > a,
-  .itemName,
-  .itemDate,
   .topMenu a,
   .contentDate,
+  #areaBodyList,
   input#entry4password::placeholder,
   .tagItemBox a,
   .contentDecription,
@@ -150,10 +149,9 @@ figure {
   .gotoTop > a,
   .gotoCategory > a,
   .gotoNitice > a,
-  .itemName,
-  .itemDate,
   .topMenu a,
   .contentDate,
+  #areaBodyList,
   input#entry4password::placeholder,
   .tagItemBox a,
   .contentDecription,
@@ -287,6 +285,7 @@ figure {
   padding: 0px 5px;
   border-radius: 5px;
   margin-bottom: 5px;
+  font-size: 90%;
 }
 
 .blogTopPage > .pageItem > a:hover {
@@ -387,6 +386,8 @@ figure {
 
 .itemName {
   flex: 1 1 0;
+  font-size: 90%;
+  margin-right: 10px;
 }
 
 .itemName img {
@@ -394,15 +395,13 @@ figure {
 }
 
 .itemDate {
-  background: #333333;
+  background: #888888;
   border-radius: 5px;
   color: #ffffff;
   padding: 0px 10px;
-}
-
-.listItem a:hover > .itemDate {
-  background: #ffffff;
-  color: #333333;
+  font-size: 90%;
+  display: flex;
+  align-items: center;
 }
 
 /* 본문 */
@@ -669,6 +668,7 @@ input#entry4password::placeholder {
   color: #333333;
   display: inline-block;
   margin-bottom: 5px;
+  font-size: 90%;
 }
 
 .tagItemBox a:hover {
@@ -807,6 +807,15 @@ input#entry4password::placeholder {
   display: none;
 }
 
+.tt_category .c_cnt {
+  background: #888888;
+  padding: 0px 5px;
+  display: inline-block;
+  margin: 2px;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
 /* 최근 공지 */
 .sidebarContent {
   margin-bottom: -5px;
@@ -820,6 +829,7 @@ input#entry4password::placeholder {
   color: #333333;
   margin-top: 5px;
   margin-bottom: 5px;
+  font-size: 90%;
 }
 
 .sidebarContent a:hover {
@@ -859,4 +869,20 @@ input#entry4password::placeholder {
 .blogBottomGoogleAD {
   margin-bottom: 60px;
   margin-top: 60px;
+}
+
+/* 방문자 카운트 */
+.sidebarItem:nth-child(7) .sidebarContent {
+  font-size: 90%;
+}
+
+/* 아카이브 카운트 */
+.sidebarItem:nth-child(6) .cnt {
+  background: #888888;
+  padding: 0px 5px;
+  display: inline-block;
+  margin: 2px;
+  margin-left: 5px;
+  color: #ffffff;
+  border-radius: 5px;
 }
