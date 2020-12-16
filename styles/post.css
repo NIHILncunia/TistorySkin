@@ -843,3 +843,53 @@
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
+
+/* 메시지 박스 링크 */
+
+.messageRed .linkBlog,
+.messageRed .linkNomal {
+  color: #ff5b5b;
+  border: 1px solid #ff5b5b;
+}
+
+.messageRed .linkBlog:hover,
+.messageRed .linkNomal:hover {
+  color: #ffffff;
+  background: #ff5b5b;
+}
+
+.messageBlue .linkBlog,
+.messageBlue .linkNomal {
+  color: #3daeff;
+  border: 1px solid #3daeff;
+}
+
+.messageBlue .linkBlog:hover,
+.messageBlue .linkNomal:hover {
+  color: #ffffff;
+  background: #3daeff;
+}
+
+.messageYellow .linkBlog,
+.messageYellow .linkNomal {
+  color: #e0e000;
+  border: 1px solid #e0e000;
+}
+
+.messageYellow .linkBlog:hover,
+.messageYellow .linkNomal:hover {
+  color: #333333;
+  background: #e0e000;
+}
+
+.messageGreen .linkBlog,
+.messageGreen .linkNomal {
+  color: #11b32c;
+  border: 1px solid #11b32c;
+}
+
+.messageGreen .linkBlog:hover,
+.messageGreen .linkNomal:hover {
+  color: #ffffff;
+  background: #11b32c;
+}

@@ -29,7 +29,7 @@
   <title>[##_page_title_##] :: [##_title_##]</title>
   
   <!-- 구글 광고 추적 코드 -->
-  <script data-ad-client="ca-pub-9256396675875954" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script data-ad-client="ca-pub-2086003756380276" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
   <div id="[##_body_id_##]">
@@ -60,16 +60,14 @@
       <main id="blogMiddle">
 
         <!-- 페이지 모음 -->
-        <section>
-          <div class="blogTopPage">
-            <p class="pageTitle"><i class="far fa-file"></i> 페이지</p>
-            <div class="pageItem">
-              <a href="/pages/japanese-learning">일본어 가이드 모음</a>
-              <a href="/pages/html-learning">HTML 가이드 모음</a>
-              <a href="/pages/css-learning">CSS 가이드 모음</a>
-            </div>
+        <div class="blogTopPage">
+          <p class="pageTitle"><i class="far fa-file"></i> 페이지</p>
+          <div class="pageItem">
+            <a href="/pages/japanese-learning">일본어 가이드 모음</a>
+            <a href="/pages/html-learning">HTML 가이드 모음</a>
+            <a href="/pages/css-learning">CSS 가이드 모음</a>
           </div>
-        </section>
+        </div>
 
         <!-- 공지사항으로 이동하기 -->
         <div class="gotoNitice" id="top">
@@ -83,7 +81,7 @@
 
         <!-- 검색 결과 -->
         <s_list>
-          <section>
+          <article>
             <div id="blogSearchList">
               <div class="areaNameTitle">
                 <p><i class="fas fa-search"></i> '[##_list_conform_##]' 관련 글 [##_list_count_##]건</p>
@@ -108,7 +106,7 @@
                 </div> -->
               </div>
             </div>
-          </section>
+          </article>
         </s_list>
 
         <!-- 공지 -->
@@ -299,7 +297,7 @@
 
         <!-- 태그 클라우드 -->
         <s_tag>
-          <section>
+          <article>
             <div class="blogTagCloud">
               <h1 class="contentTitle"><i class="fas fa-tags"></i> 태그 클라우드</h1>
               <div class="tagItemBox">
@@ -308,12 +306,12 @@
                 </s_tag_rep>
               </div>
             </div>
-          </section>
+          </article>
         </s_tag>
 
         <!-- 게스트북 -->
         <s_guest>
-          <section>
+          <article>
             <div class="blogGuestBook">
               <h1 class="contentTitle"><i class="fas fa-book"></i> 게스트북</h1>
               <!-- <div class="googleTopAd">
@@ -345,7 +343,7 @@
                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
               </div>
             </div>
-          </section>
+          </article>
         </s_guest>
 
         <!-- 태그 쉼표 제거 -->
@@ -377,15 +375,13 @@
 
         <!-- 페이징 -->
         <s_paging>
-          <section>
-            <div id="blogPaging">
-              <a [##_prev_page_##] class="[##_no_more_prev_##]"><i class="fas fa-arrow-left"></i></a>
-              <s_paging_rep>
-                <a [##_paging_rep_link_##] class="num">[##_paging_rep_link_num_##]</a>
-              </s_paging_rep>
-              <a [##_next_page_##] class="[##_no_more_next_##]"><i class="fas fa-arrow-right"></i></a>
-            </div>
-          </section>
+          <div id="blogPaging">
+            <a [##_prev_page_##] class="[##_no_more_prev_##]"><i class="fas fa-arrow-left"></i></a>
+            <s_paging_rep>
+              <a [##_paging_rep_link_##] class="num">[##_paging_rep_link_num_##]</a>
+            </s_paging_rep>
+            <a [##_next_page_##] class="[##_no_more_next_##]"><i class="fas fa-arrow-right"></i></a>
+          </div>
         </s_paging>
 
         <!-- <div class="blogBottomGoogleAD">
