@@ -95,17 +95,6 @@
   line-height: 1.5;
 }
 
-.messageRed > p > strong,
-.messageBlue > p > strong,
-.messageGreen > p > strong,
-.messageYellow > p > strong,
-.messageRed > p > b,
-.messageBlue > p > b,
-.messageGreen > p > b,
-.messageYellow > p > b {
-  font-weight: 900;
-}
-
 .messageRed:before,
 .messageBlue:before,
 .messageGreen:before,
@@ -892,4 +881,38 @@
 .messageGreen .linkNomal:hover {
   color: #ffffff;
   background: #11b32c;
+}
+
+/* 중요 단어 표시 */
+
+.contentArticle p > strong {
+  font-weight: 600;
+  color: #ff5b5b;
+}
+
+.postKeyowrds > strong {
+  color: #888888 !important;
+}
+
+.messageRed > p > strong,
+.messageRed > p > b {
+  font-weight: 900;
+  color: #ff5b5b;
+}
+.messageBlue > p > strong,
+.messageBlue > p > b {
+  font-weight: 900;
+  color: #3daeff;
+}
+
+.messageGreen > p > strong,
+.messageGreen > p > b {
+  font-weight: 900;
+  color: #11b32c;
+}
+
+.messageYellow > p > strong,
+.messageYellow > p > b {
+  font-weight: 900;
+  color: #e0e000;
 }
