@@ -2,19 +2,18 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Script-Type" content="text/javascript" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- 메타 태그 -->
   <meta name="title" content="[##_page_title_##] :: [##_title_##]" />
-  <meta name="keywords" content="디자인, 썸네일 디자인, 게임, 게임 리뷰, 게임 플레이, 마인크래프트, 캐릭터 디자인, 일본어, 일본어 공부, 일본어 학습, 일본어 단어, 일본어 문법, 게임 소식, 프로그래밍, 자바스크립트, 코딩, 웹디자인" />
+  <meta name="keywords" content="코딩, 웹 프로그래밍, 프로그래밍, 웹 개발, HTML, CSS, JavaScript, 프로그래밍 공부, 코딩 공부, 프로그래밍 배우기, 코딩 배우기, 일본어, 일본어 공부, 일본어 배우기" />
   <meta name="Subject" content="[##_title_##]"/>
   <meta name="author" content="[##_blogger_##]"/>
   <meta name="writer" content="[##_blogger_##]"/>
   <meta name="copyright" content="© [##_blogger_##]"/>
+  <meta name="Generator" content="VS Code" />
 
   <!-- 폰트어썸 -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
@@ -132,22 +131,21 @@
               <div class="contentComment">
                 <div id="disqus_thread"></div>
                 <script>
-  
-                /**
-                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-                /*
-                var disqus_config = function () {
-                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                };
-                */
-                (function() { // DON'T EDIT BELOW THIS LINE
-                var d = document, s = d.createElement('script');
-                s.src = 'https://https-nihil-ncunia-tistory-com.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-                })();
+                  /**
+                  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                  /*
+                  var disqus_config = function () {
+                  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                  };
+                  */
+                  (function() { // DON'T EDIT BELOW THIS LINE
+                  var d = document, s = d.createElement('script');
+                  s.src = 'https://nihil-blog.disqus.com/embed.js';
+                  s.setAttribute('data-timestamp', +new Date());
+                  (d.head || d.body).appendChild(s);
+                  })();
                 </script>
                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
               </div>
@@ -191,28 +189,83 @@
                   [##_tag_label_rep_##]
                 </div>
               </s_tag_label>
-              <div class="contentComment">
-                <div id="disqus_thread"></div>
-                <script>
-  
-                /**
-                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-                /*
-                var disqus_config = function () {
-                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                };
-                */
-                (function() { // DON'T EDIT BELOW THIS LINE
-                var d = document, s = d.createElement('script');
-                s.src = 'https://https-nihil-ncunia-tistory-com.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-                })();
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-              </div>
+              <s_rp>
+                <div class="contentComment">
+                  <s_rp_input_form>
+                    <div class="commentWrite">
+                      <s_rp_member>
+                        <s_rp_guest>
+                          <div class="nameInput">
+                            <label for="name"><i class="fas fa-user"></i> 필명</label>
+                            <p><input type="text" id="name" name="[##_rp_input_name_##]" value="[##_guest_name_##]" placeholder="필명" required /></p>
+                          </div>
+                          <div class="pwdInput">
+                            <label for="pwd"><i class="fas fa-key"></i> 확인번호</label>
+                            <p><input type="password" id="pwd" maxlength="8" name="[##_rp_input_password_##]" value="[##_rp_admin_check_##]" placeholder="확인번호" required /></p>
+                          </div>
+                        </s_rp_guest>
+                        <div class="secretBox">
+                          <label for="secret"><i class="fas fa-lock"></i> 비밀글 </label>
+                          <input type="checkbox" id="secret" name="[##_rp_input_is_secret_##]" />
+                        </div>
+                      </s_rp_member>
+                      <p class="descInput">
+                        <textarea name="[##_rp_input_comment_##]" placeholder="덧글을 입력하세요." required></textarea>
+                      </p>
+                      <p class="CommentButton">
+                        <button type="submit" onclick="[##_rp_onclick_submit_##]">입력</button>
+                      </p>
+                    </div>
+                  </s_rp_input_form>
+                  <div class="commentList">
+                    <s_rp_container>
+                      <s_rp_rep>
+                        <div class="commentListItem" id="[##_rp_rep_id_##]">
+                          <div class="[##_rp_rep_class_##]">
+                            <div class="rpImage">
+                              <img class="image" src="[##_rp_rep_logo_##]" />
+                            </div>
+                            <div class="rpContent">
+                              <p class="name">[##_rp_rep_name_##]</p>
+                              <p class="date"><i class="far fa-clock"></i> [##_rp_rep_date_##]</p>
+                              <p class="control">
+                                <a href="#" onclick="[##_rp_rep_onclick_delete_##]" class="modify">
+                                  <span><i class="fas fa-cog"></i> 수정/삭제</span>
+                                </a>
+                                <a href="#" onclick="[##_rp_rep_onclick_reply_##]" class="write">
+                                  <span><i class="fas fa-reply"></i> 답글</span>
+                                </a>
+                              </p>
+                              <p class="commentDesc">[##_rp_rep_desc_##]</p>
+                            </div>
+                          </div>
+                          <s_rp2_container>
+                            <s_rp2_rep>
+                              <div class="commentListItemReply" id="[##_rp_rep_id_##]">
+                                <div class="[##_rp_rep_class_##]">
+                                  <div class="rpImage">
+                                    <img class="image" src="[##_rp_rep_logo_##]" />
+                                  </div>
+                                  <div class="rpContent">
+                                    <p class="name">[##_rp_rep_name_##]</p>
+                                    <p class="date"><i class="far fa-clock"></i> [##_rp_rep_date_##]</p>
+                                    <p class="control">
+                                      <a href="#" onclick="[##_rp_rep_onclick_delete_##]" class="modify">
+                                        <span><i class="fas fa-cog"></i> 수정/삭제</span>
+                                      </a>
+                                    </p>
+                                    <p class="commentDesc">[##_rp_rep_desc_##]</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </s_rp2_rep>
+                          </s_rp2_container>
+                        </div>
+                      </s_rp_rep>
+                    </s_rp_container>
+                  </div>
+                </div>
+              </s_rp>
             </div>
           </article>
         </s_article_rep>
@@ -272,22 +325,21 @@
               <div class="contentComment">
                 <div id="disqus_thread"></div>
                 <script>
-  
-                /**
-                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-                /*
-                var disqus_config = function () {
-                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                };
-                */
-                (function() { // DON'T EDIT BELOW THIS LINE
-                var d = document, s = d.createElement('script');
-                s.src = 'https://https-nihil-ncunia-tistory-com.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-                })();
+                  /**
+                  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                  /*
+                  var disqus_config = function () {
+                  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                  };
+                  */
+                  (function() { // DON'T EDIT BELOW THIS LINE
+                  var d = document, s = d.createElement('script');
+                  s.src = 'https://nihil-blog.disqus.com/embed.js';
+                  s.setAttribute('data-timestamp', +new Date());
+                  (d.head || d.body).appendChild(s);
+                  })();
                 </script>
                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
               </div>
@@ -323,22 +375,21 @@
               <div class="contentComment">
                 <div id="disqus_thread"></div>
                 <script>
-  
-                /**
-                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-                /*
-                var disqus_config = function () {
-                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                };
-                */
-                (function() { // DON'T EDIT BELOW THIS LINE
-                var d = document, s = d.createElement('script');
-                s.src = 'https://https-nihil-ncunia-tistory-com.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-                })();
+                  /**
+                  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                  /*
+                  var disqus_config = function () {
+                  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                  };
+                  */
+                  (function() { // DON'T EDIT BELOW THIS LINE
+                  var d = document, s = d.createElement('script');
+                  s.src = 'https://nihil-blog.disqus.com/embed.js';
+                  s.setAttribute('data-timestamp', +new Date());
+                  (d.head || d.body).appendChild(s);
+                  })();
                 </script>
                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
               </div>

@@ -286,11 +286,12 @@
 
 /* 단어 강조 */
 .postWordBox {
-  background: #dddddd;
-  color: #333333;
+  background: #eeeeee;
+  color: #666666;
   padding: 0px 5px;
   border-radius: 5px;
-  border: 1px solid #33333350;
+  border: 1px solid #33333380;
+  border-bottom: 3px solid #33333380;
   font-weight: 600;
   text-indent: 0px;
   font-size: 90%;
@@ -302,10 +303,11 @@
   border-radius: 5px;
   font-weight: 600;
   text-indent: 0px;
-  border: 1px solid #33333350;
+  border: 1px solid #333333;
+  border-bottom: 3px solid #333333;
   background: #666666;
   font-family: "Noto Sans KR", "Noto Sans JP", sans-serif !important;
-  color: #ffffff;
+  color: #eeeeee;
   font-size: 90%;
 }
 
@@ -915,4 +917,12 @@
 .messageYellow > p > b {
   font-weight: 900;
   color: #e0e000;
+}
+
+strong > .postWordBox {
+  font-weight: 600;
+  color: #ff5b5b;
+  background: #ffe0e0;
+  border: 1px solid #ff5b5bc0;
+  border-bottom: 3px solid #ff5b5bc0;
 }

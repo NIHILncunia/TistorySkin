@@ -127,7 +127,12 @@ figure {
   .tagItemBox a,
   .contentDecription,
   .blogSearchDescription p,
-  .blogTopPage > .pageItem > a {
+  .blogTopPage > .pageItem > a,
+  .contentComment,
+  .commentWrite #name,
+  .commentWrite #pwd,
+  .commentWrite .descInput textarea,
+  .commentWrite .CommentButton button {
     font-size: 11pt;
   }
 
@@ -156,7 +161,12 @@ figure {
   .tagItemBox a,
   .contentDecription,
   .blogSearchDescription p,
-  .blogTopPage > .pageItem > a {
+  .blogTopPage > .pageItem > a,
+  .contentComment,
+  .commentWrite #name,
+  .commentWrite #pwd,
+  .commentWrite .descInput textarea,
+  .commentWrite .CommentButton button {
     font-size: 14pt;
   }
 
@@ -885,4 +895,154 @@ input#entry4password::placeholder {
   margin-left: 5px;
   color: #ffffff;
   border-radius: 5px;
+}
+
+/* 덧글 에리어 스타일 */
+
+.commentWrite .nameInput,
+.commentWrite .pwdInput,
+.commentWrite .secretBox {
+  margin-bottom: 10px;  
+}
+
+.commentWrite .descInput textarea {
+  width: 100%;
+  box-sizing: border-box;
+  height: 100px;
+  border: 0px;
+  border-radius: 5px;
+  padding: 5px;
+  display: block;
+  background: #dddddd;
+  color: #333333;
+}
+
+.commentWrite .descInput textarea::placeholder {
+  color: #33333370;
+}
+
+.commentWrite #name,
+.commentWrite #pwd {
+  width: 100%;
+  margin-top: 5px;
+  border: 0px;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: #dddddd;
+  color: #333333;
+}
+
+.commentWrite .CommentButton button {
+  width: 100%;
+  display: block;
+  padding: 5px;
+  border-radius: 5px;
+  border: 0px;
+  background: #ffffff;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.commentWrite .CommentButton button:before {
+  content: '\f075';
+  font-family: "Font Awesome 5 Free";
+  margin-right: 5px;
+  font-weight: 900;
+}
+
+.contentComment .rp_admin,
+.contentComment .rp_general,
+.contentComment .rp_secret {
+  display: flex;
+}
+
+.rp_general > .rpImage,
+.rp_secret > .rpImage,
+.rp_admin > .rpImage {
+  align-items: flex-start;
+  display: flex;
+  margin-top: 5px;
+}
+
+.rp_general > .rpImage img,
+.rp_secret > .rpImage img,
+.rp_admin > .rpImage img {
+  width: 35px;
+  border-radius: 5px;
+  margin-right: 10px;
+  border: 1px solid #333333;
+  background: #333333;
+}
+
+.rp_general > .rpContent,
+.rp_secret > .rpContent,
+.rp_admin > .rpContent {
+  flex: 1 1 0;
+}
+
+.commentListItem {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background: #444444;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.commentListItem:nth-child(1) {
+  margin-top: 40px;
+}
+
+.commentListItemReply:nth-child(1) {
+  margin-top: 0px;
+}
+
+.commentListItem:nth-last-child(1),
+.commentListItemReply:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+
+.commentListItemReply {
+  background: #333333;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.commentListItem .name {
+  margin-bottom: 10px;
+}
+
+.commentListItem .write,
+.commentListItem .modify,
+.commentListItem .date a {
+  background: #ffffff;
+  padding: 0px 5px;
+  color: #333333;
+  border-radius: 5px;
+}
+
+.commentListItem .write {
+  margin-left: 5px;
+}
+
+.commentListItem .date a {
+  margin-left: 5px;
+}
+.commentListItem .write:hover, 
+.commentListItem .modify:hover,
+.commentListItem .date a:hover {
+  background: #aaaaaa;
+  color: #333333;
+}
+
+.commentListItem .date {
+  font-size: 90%;
+}
+
+.commentListItem .control {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 90%;
 }
