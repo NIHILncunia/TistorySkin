@@ -412,7 +412,7 @@
 }
 
 /* 일본어 블럭 */
-.japaneseBlock {
+.japanese-block {
   padding: 10px;
   background: #333333;
   color: #ffffff;
@@ -422,18 +422,18 @@
   margin-bottom: 30px;
 }
 
-.japaneseBlock > .japanese {
+.japanese-block > .japanese {
   background: #555555;
   color: #ffffff;
   border-radius: 20px;
   padding: 0px 5px;
 }
 
-.japaneseBlock > .japanese {
+.japanese-block > .japanese {
     font-size: 40pt;
 }
 
-.japaneseBlock > .korean {
+.japanese-block > .korean {
   font-size: 30pt;
   margin-top: 10px;
   padding: 0px 5px;
@@ -443,7 +443,7 @@
 }
 
 /* 일본어 단어 블럭 */
-.jpWord {
+.jp-word {
   padding: 10px;
   background: #333333;
   color: #ffffff;
@@ -453,14 +453,14 @@
   margin-bottom: 30px;
 }
 
-.jpWord > .japanese {
+.jp-word > .japanese {
   background: #555555;
   color: #ffffff;
   border-radius: 10px;
   padding: 0px 5px;
 }
 
-.jpWord > .korean {
+.jp-word > .korean {
   margin-top: 10px;
   padding: 0px 5px;
   color: #ffffff;
