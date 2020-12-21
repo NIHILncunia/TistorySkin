@@ -411,8 +411,8 @@
   display: none;
 }
 
-/* 일본어 블럭 */
-.japanese-block {
+/* 일본어 단어 블럭 */
+.jp-word {
   padding: 10px;
   background: #333333;
   color: #ffffff;
@@ -422,18 +422,18 @@
   margin-bottom: 30px;
 }
 
-.japanese-block > .japanese {
+.jp-word > .japanese {
   background: #555555;
   color: #ffffff;
   border-radius: 20px;
   padding: 0px 5px;
 }
 
-.japanese-block > .japanese {
+.jp-word > .japanese {
     font-size: 40pt;
 }
 
-.japanese-block > .korean {
+.jp-word > .korean {
   font-size: 30pt;
   margin-top: 10px;
   padding: 0px 5px;
@@ -442,8 +442,8 @@
   font-weight: 900;
 }
 
-/* 일본어 단어 블럭 */
-.jp-word {
+/* 일본어 블럭 */
+.japanese-block {
   padding: 10px;
   background: #333333;
   color: #ffffff;
@@ -453,14 +453,14 @@
   margin-bottom: 30px;
 }
 
-.jp-word > .japanese {
+.japanese-block > .japanese {
   background: #555555;
   color: #ffffff;
   border-radius: 10px;
   padding: 0px 5px;
 }
 
-.jp-word > .korean {
+.japanese-block > .korean {
   margin-top: 10px;
   padding: 0px 5px;
   color: #ffffff;
