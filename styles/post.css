@@ -227,6 +227,16 @@
   font-weight: 600;
 }
 
+.quote-block > p:before {
+  content: '-';
+  margin-right: 10px;
+}
+
+.quote-block > p:after {
+  content: '-';
+  margin-left: 10px;
+}
+
 /* 구분선 */
 .postLine {
   border: none;
@@ -295,6 +305,11 @@
   font-weight: 600;
   text-indent: 0px;
   font-size: 90%;
+}
+
+.list-body li .post-word-box,
+.order-list-body li .post-word-box {
+  background: #dddddd;
 }
 
 /* 코드 강조 */
@@ -417,20 +432,20 @@
   background: #333333;
   color: #ffffff;
   text-align: center;
-  border-radius: 20px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .jp-word > .japanese {
   background: #555555;
   color: #ffffff;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 0px 5px;
 }
 
 .jp-word > .japanese {
-    font-size: 40pt;
+  font-size: 40pt;
 }
 
 .jp-word > .korean {
@@ -438,7 +453,7 @@
   margin-top: 10px;
   padding: 0px 5px;
   color: #ffffff;
-  border-radius: 20px;
+  border-radius: 10px;
   font-weight: 900;
 }
 
@@ -448,9 +463,9 @@
   background: #333333;
   color: #ffffff;
   text-align: justify;
-  border-radius: 20px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .japanese-block > .japanese {
@@ -464,7 +479,7 @@
   margin-top: 10px;
   padding: 0px 5px;
   color: #ffffff;
-  border-radius: 20px;
+  border-radius: 10px;
   font-weight: 900;
 }
 
@@ -703,7 +718,7 @@
   padding: 5px;
   text-align: center;
   color: #fff000;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 150%;
 }
 
@@ -925,4 +940,86 @@ strong > .post-word-box {
   background: #ffe0e0;
   border: 1px solid #ff5b5bc0;
   border-bottom: 3px solid #ff5b5bc0;
+}
+
+/* 키보드 입력 요소 강조 */
+.post-key-input {
+  padding: 0px 5px;
+  border-radius: 5px;
+  font-size: 90%;
+  border: 1px solid #3f91ff;
+  border-bottom: 3px solid #3f91ff;
+  background: #c8e0ff90;
+  color: #3f91ff;
+  font-weight: 600;
+}
+
+.post-key-input:before {
+  content: '\f11c';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+/* 인물 대사 블럭 */
+.character-script {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  background: #eeeeee;
+  border-radius: 10px;
+  border: 1px solid #33333330;
+}
+
+.character-script .character-image {
+  display: flex;
+  align-items: flex-start;
+}
+
+.character-script .character-image img {
+  margin-right: 10px;
+  width: 50px;
+}
+
+.character-script .script-line {
+  flex: 1 1 0;
+}
+
+.character-script .script-line .character-name,
+.character-script .script-line .script-content {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  text-indent: 0px;
+  line-height: normal;
+}
+
+.character-script .script-line .character-name {
+  font-weight: 900;
+}
+
+.character-script .script-line .script-content {
+  font-size: 90%;
+  line-height: 1.6;
+  margin-top: 5px !important;
+  color: #666666;
+}
+
+.character-script .script-line .script-content:before {
+  content: '\f10d';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 5px;
+  vertical-align: super;
+  font-size: 50%;
+}
+
+.character-script .script-line .script-content:after {
+  content: '\f10e';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 5px;
+  vertical-align: super;
+  font-size: 50%;
 }
