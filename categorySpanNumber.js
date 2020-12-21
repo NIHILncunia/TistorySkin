@@ -1,7 +1,7 @@
 const cate = document.getElementsByClassName('tt_category');
 const span = cate[0].getElementsByTagName('span');
 
-const archive = document.getElementsByClassName('sidebarContent');
+const archive = document.getElementsByClassName('sidebar-content');
 const span2 = archive[3].getElementsByTagName('span');
 
 for (let i = 0; i < span.length; i++) {

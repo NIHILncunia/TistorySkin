@@ -36,16 +36,16 @@
 
       <!-- 상단 블로그 제목 -->
       <header>
-        <div id="blogTop">
-          <p id="topTitle"><a href="[##_blog_link_##]">[##_title_##]</a></p>
+        <div id="blog-top">
+          <p id="top-title"><a href="[##_blog_link_##]">[##_title_##]</a></p>
           <s_search>
-            <div id="topSearch">
+            <div id="top-search">
               <input type="text" placeholder="검색어를 입력하세요." name="[##_search_name_##]" value="[##_search_text_##]" onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }"/>
-              <button onclick="[##_search_onclick_submit_##]" class="searchButton"><i class="fas fa-search"></i></button>
+              <button onclick="[##_search_onclick_submit_##]" class="search-button"><i class="fas fa-search"></i></button>
             </div>
           </s_search>
         </div>
-        <div class="topMenu">
+        <div class="top-menu">
           <a href="/"><i class="fas fa-home"></i></a>
           <a href="/tag"><i class="fas fa-tags"></i></a>
           <a href="/guestbook"><i class="fas fa-book"></i></a>
@@ -56,12 +56,12 @@
       </header>
 
       <!-- 블로그 중앙 -->
-      <main id="blogMiddle">
+      <main id="blog-middle">
 
         <!-- 페이지 모음 -->
-        <div class="blogTopPage">
-          <p class="pageTitle"><i class="far fa-file"></i> 페이지</p>
-          <div class="pageItem">
+        <div class="blog-top-page">
+          <p class="page-title"><i class="far fa-file"></i> 페이지</p>
+          <div class="page-item">
             <a href="/pages/japanese-learning">일본어 가이드 모음</a>
             <a href="/pages/html-learning">HTML 가이드 모음</a>
             <a href="/pages/css-learning">CSS 가이드 모음</a>
@@ -69,34 +69,34 @@
         </div>
 
         <!-- 공지사항으로 이동하기 -->
-        <div class="gotoNitice" id="top">
+        <div class="goto-notice" id="top">
           <a href="#notice">공지사항으로</a>
         </div>
 
         <!-- 카테고리로 이동하기 -->
-        <div class="gotoCategory">
+        <div class="goto-category">
           <a href="#category">카테고리로</a>
         </div>
 
         <!-- 검색 결과 -->
         <s_list>
           <article>
-            <div id="blogSearchList">
-              <div class="areaNameTitle">
+            <div id="blog-search-list">
+              <div class="area-name-title">
                 <p><i class="fas fa-search"></i> '[##_list_conform_##]' 관련 글 [##_list_count_##]건</p>
               </div>
-              <div class="blogSearchDescription">
+              <div class="blog-search-description">
                 <!-- <div class="googleTopAd">
                   광고 자리
                 </div> -->
                 <p>[##_list_description_##]</p>
               </div>
-              <div id="areaBodyList">
+              <div id="area-body-list">
                 <s_list_rep>
-                  <div class="listItem">
+                  <div class="list-item">
                     <a href="[##_list_rep_link_##]">
-                      <p class="itemName">[##_list_rep_title_##]</p>
-                      <p class="itemDate">[##_list_rep_regdate_##]</p>
+                      <p class="item-name">[##_list_rep_title_##]</p>
+                      <p class="item-date">[##_list_rep_regdate_##]</p>
                     </a>
                   </div>
                 </s_list_rep>
@@ -111,15 +111,15 @@
         <!-- 공지 -->
         <s_notice_rep>
           <article>
-            <div class="blogNoticePost">
-              <h1 class="contentTitle">
+            <div class="blog-notice-post">
+              <h1 class="content-title">
                 <a href="[##_notice_rep_link_##]"><i class="fas fa-pen"></i> [##_notice_rep_title_##]</a>
               </h1>
-              <p class="contentDate">
+              <p class="content-date">
                 <i class="far fa-clock"></i>
                 작성 시간 <i class="fas fa-angle-double-right"></i> [##_notice_rep_date_##]
               </p>
-              <div class="contentArticle">
+              <div class="content-article">
                 <!-- <div class="googleTopAd">
                   광고 자리
                 </div> -->
@@ -128,7 +128,7 @@
               <!-- <div class="googleBottomAd">
                 광고자리
               </div> -->
-              <div class="contentComment">
+              <div class="content-comment">
                 <div id="disqus_thread"></div>
                 <script>
                   /**
@@ -156,26 +156,26 @@
         <!-- 글 -->
         <s_article_rep>
           <article>
-            <div class="blogPost">
-              <h1 class="contentTitle">
+            <div class="blog-post">
+              <h1 class="content-title">
                 <a href="[##_article_rep_link_##]"><i class="fas fa-pen"></i> [##_article_rep_title_##]</a>
               </h1>
-              <div class="contentInfo">
-                <p class="contentDate">
+              <div class="content-info">
+                <p class="content-date">
                   <i class="far fa-clock"></i> 작성 시간 <i class="fas fa-angle-double-right"></i> [##_article_rep_date_##]
                 </p>
-                <p class="contentCategory">
+                <p class="content-category">
                   <i class="fas fa-list"></i> 카테고리 <i class="fas fa-angle-double-right"></i>
                   <a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a>
                 </p>
               </div>
               <s_ad_div>
-                <div class="contentAdmin">
-                  <p class="adminEdit"><i class="far fa-edit"></i> 수정 <i class="fas fa-angle-double-right"></i> <a href="#" onclick="[##_s_ad_m_onclick_##]">클릭</a></p>
-                  <p class="adminDelete"><i class="fas fa-minus-circle"></i> 삭제 <i class="fas fa-angle-double-right"></i> <a href="#" onclick="[##_s_ad_d_onclick_##]">클릭</a></p>
+                <div class="content-admin">
+                  <p class="admin-edit"><i class="far fa-edit"></i> 수정 <i class="fas fa-angle-double-right"></i> <a href="#" onclick="[##_s_ad_m_onclick_##]">클릭</a></p>
+                  <p class="admin-delete"><i class="fas fa-minus-circle"></i> 삭제 <i class="fas fa-angle-double-right"></i> <a href="#" onclick="[##_s_ad_d_onclick_##]">클릭</a></p>
                 </div>
               </s_ad_div>
-              <div class="contentArticle">
+              <div class="content-article">
                 <!-- <div class="googleTopAd">
                   광고 자리
                 </div> -->
@@ -185,47 +185,47 @@
                 광고자리
               </div> -->
               <s_tag_label>
-                <div class="contentTag">
+                <div class="content-tag">
                   [##_tag_label_rep_##]
                 </div>
               </s_tag_label>
               <s_rp>
-                <div class="contentComment">
+                <div class="content-comment">
                   <s_rp_input_form>
-                    <div class="commentWrite">
+                    <div class="comment-write">
                       <s_rp_member>
                         <s_rp_guest>
-                          <div class="nameInput">
+                          <div class="name-input">
                             <label for="name"><i class="fas fa-user"></i> 필명</label>
                             <p><input type="text" id="name" name="[##_rp_input_name_##]" value="[##_guest_name_##]" placeholder="필명" required /></p>
                           </div>
-                          <div class="pwdInput">
+                          <div class="pwd-input">
                             <label for="pwd"><i class="fas fa-key"></i> 확인번호</label>
                             <p><input type="password" id="pwd" maxlength="8" name="[##_rp_input_password_##]" value="[##_rp_admin_check_##]" placeholder="확인번호" required /></p>
                           </div>
                         </s_rp_guest>
-                        <div class="secretBox">
+                        <div class="secret-box">
                           <label for="secret"><i class="fas fa-lock"></i> 비밀글 </label>
                           <input type="checkbox" id="secret" name="[##_rp_input_is_secret_##]" />
                         </div>
                       </s_rp_member>
-                      <p class="descInput">
+                      <p class="desc-input">
                         <textarea name="[##_rp_input_comment_##]" placeholder="덧글을 입력하세요." required></textarea>
                       </p>
-                      <p class="CommentButton">
+                      <p class="comment-button">
                         <button type="submit" onclick="[##_rp_onclick_submit_##]">입력</button>
                       </p>
                     </div>
                   </s_rp_input_form>
-                  <div class="commentList">
+                  <div class="comment-list">
                     <s_rp_container>
                       <s_rp_rep>
-                        <div class="commentListItem" id="[##_rp_rep_id_##]">
+                        <div class="comment-list-item" id="[##_rp_rep_id_##]">
                           <div class="[##_rp_rep_class_##]">
-                            <div class="rpImage">
+                            <div class="rp-image">
                               <img class="image" src="[##_rp_rep_logo_##]" />
                             </div>
-                            <div class="rpContent">
+                            <div class="rp-content">
                               <p class="name">[##_rp_rep_name_##]</p>
                               <p class="date"><i class="far fa-clock"></i> [##_rp_rep_date_##]</p>
                               <p class="control">
@@ -236,17 +236,17 @@
                                   <span><i class="fas fa-reply"></i> 답글</span>
                                 </a>
                               </p>
-                              <p class="commentDesc">[##_rp_rep_desc_##]</p>
+                              <p class="comment-desc">[##_rp_rep_desc_##]</p>
                             </div>
                           </div>
                           <s_rp2_container>
                             <s_rp2_rep>
-                              <div class="commentListItemReply" id="[##_rp_rep_id_##]">
+                              <div class="comment-list-item-reply" id="[##_rp_rep_id_##]">
                                 <div class="[##_rp_rep_class_##]">
-                                  <div class="rpImage">
+                                  <div class="rp-image">
                                     <img class="image" src="[##_rp_rep_logo_##]" />
                                   </div>
-                                  <div class="rpContent">
+                                  <div class="rp-content">
                                     <p class="name">[##_rp_rep_name_##]</p>
                                     <p class="date"><i class="far fa-clock"></i> [##_rp_rep_date_##]</p>
                                     <p class="control">
@@ -254,7 +254,7 @@
                                         <span><i class="fas fa-cog"></i> 수정/삭제</span>
                                       </a>
                                     </p>
-                                    <p class="commentDesc">[##_rp_rep_desc_##]</p>
+                                    <p class="comment-desc">[##_rp_rep_desc_##]</p>
                                   </div>
                                 </div>
                               </div>
@@ -273,25 +273,25 @@
         <!-- 보호글 -->
         <s_article_protected>
           <article>
-            <div class="blogProtectedPost">
-              <h1 class="contentTitle">
+            <div class="blog-protected-post">
+              <h1 class="content-title">
                 <a href="[##_article_rep_link_##]"><i class="fas fa-pen"></i> [##_article_rep_title_##]</a>
               </h1>
-              <div class="contentInfo">
-                <p class="contentDate">
+              <div class="content-info">
+                <p class="content-date">
                   <i class="far fa-clock"></i> 작성 시간 <i class="fas fa-angle-double-right"></i> [##_article_rep_date_##]
                 </p>
-                <p class="contentCategory">
+                <p class="content-category">
                   <i class="fas fa-list"></i> 카테고리 <i class="fas fa-angle-double-right"></i>
                   <a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a>
                 </p>
               </div>
-              <div class="contentArticle">
+              <div class="content-article">
                 <!-- <div class="googleTopAd">
                   광고 자리
                 </div> -->
-                <div class="contentMessage">자물쇠로 단단히 잠겨있습니다. 비밀번호가 필요합니다.</div>
-                <div class="contentForm">
+                <div class="content-message">자물쇠로 단단히 잠겨있습니다. 비밀번호가 필요합니다.</div>
+                <div class="content-form">
                   <input class="password" type="password" maxlength="16" id="[##_article_password_##]" name="[##_article_password_##]" value="" placeholder="비밀번호를 입력하세요." onkeydown="if (event.keyCode == 13)[##_article_dissolve_##]" />
                   <button onclick="[##_article_dissolve_##]">입력</button>
                 </div>
@@ -306,14 +306,14 @@
         <!-- 페이지 -->
         <s_page_rep>
           <article>
-            <div class="blogPagePost">
-              <h1 class="contentTitle">
+            <div class="blog-page-post">
+              <h1 class="content-title">
                 <a href="[##_article_rep_link_##]"><i class="far fa-file"></i> [##_article_rep_title_##]</a>
               </h1>
-              <p class="contentDate">
+              <p class="content-date">
                 <i class="far fa-clock"></i> 작성 시간 <i class="fas fa-angle-double-right"></i> [##_article_rep_date_##]
               </p>
-              <div class="contentArticle">
+              <div class="content-article">
                 <!-- <div class="googleTopAd">
                   광고 자리
                 </div> -->
@@ -322,7 +322,7 @@
               <!-- <div class="googleBottomAd">
                 광고자리
               </div> -->
-              <div class="contentComment">
+              <div class="content-comment">
                 <div id="disqus_thread"></div>
                 <script>
                   /**
@@ -350,9 +350,9 @@
         <!-- 태그 클라우드 -->
         <s_tag>
           <article>
-            <div class="blogTagCloud">
-              <h1 class="contentTitle"><i class="fas fa-tags"></i> 태그 클라우드</h1>
-              <div class="tagItemBox">
+            <div class="blog-tag-cloud">
+              <h1 class="content-title"><i class="fas fa-tags"></i> 태그 클라우드</h1>
+              <div class="tag-item-box">
                 <s_tag_rep>
                   <a href="[##_tag_link_##]" class="[##_tag_class_##]"><i class="fas fa-tag"></i> [##_tag_name_##]</a>
                 </s_tag_rep>
@@ -364,15 +364,15 @@
         <!-- 게스트북 -->
         <s_guest>
           <article>
-            <div class="blogGuestBook">
-              <h1 class="contentTitle"><i class="fas fa-book"></i> 게스트북</h1>
+            <div class="blog-guest-book">
+              <h1 class="content-title"><i class="fas fa-book"></i> 게스트북</h1>
               <!-- <div class="googleTopAd">
                 광고 자리
               </div> -->
-              <p class="contentDecription">
+              <p class="content-decription">
                 남기실 말이 있으시면 여기에 남겨주시면 됩니다. 아래의 디스커스에 덧글을 작성하면 메일로 알림이 옵니다. 빠르게 확인하고 있으니 언제든 남겨주시면 됩니다.
               </p>
-              <div class="contentComment">
+              <div class="content-comment">
                 <div id="disqus_thread"></div>
                 <script>
                   /**
@@ -400,7 +400,7 @@
         <!-- 태그 쉼표 제거 -->
         <script>
           function rmvComma() {
-            const rmvTagComma = document.getElementsByClassName("contentTag");
+            const rmvTagComma = document.getElementsByClassName("content-tag");
             if (window.location.href.includes('pages')) {
               return;
             } else if (window.location.href.includes('guestbook')) {
@@ -426,7 +426,7 @@
 
         <!-- 페이징 -->
         <s_paging>
-          <div id="blogPaging">
+          <div id="blog-paging">
             <a [##_prev_page_##] class="[##_no_more_prev_##]"><i class="fas fa-arrow-left"></i></a>
             <s_paging_rep>
               <a [##_paging_rep_link_##] class="num">[##_paging_rep_link_num_##]</a>
@@ -441,16 +441,16 @@
       </main>
 
       <!-- 하단 사이드바 -->
-      <aside id="blogSideBar">
+      <aside id="blog-side-bar">
         <s_sidebar>
           <s_sidebar_element>
             <!-- 카테고리 -->
-            <div class="gotoTop" id="category">
+            <div class="goto-top" id="category">
               <a href="#top">포스트로</a>
             </div>
-            <div class="sidebarItem">
-              <p class="sidebarTitle"><i class="fas fa-list"></i> 카테고리</p>
-              <div class="sidebarContent">
+            <div class="sidebar-item">
+              <p class="sidebar-title"><i class="fas fa-list"></i> 카테고리</p>
+              <div class="sidebar-content">
                 [##_category_list_##]
               </div>
             </div>
@@ -458,13 +458,13 @@
 
           <s_sidebar_element>
             <!-- 최근 공지 -->
-            <div class="gotoTop" id="notice">
+            <div class="goto-top" id="notice">
               <a href="#top">포스트로</a>
             </div>
-            <div class="sidebarItem">
+            <div class="sidebar-item">
             <s_rct_notice>
-              <p class="sidebarTitle"><i class="fas fa-exclamation-circle"></i> 최근 공지사항</p>
-              <div class="sidebarContent">
+              <p class="sidebar-title"><i class="fas fa-exclamation-circle"></i> 최근 공지사항</p>
+              <div class="sidebar-content">
                 <s_rct_notice_rep>
                   <a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a>
                 </s_rct_notice_rep>
@@ -475,9 +475,9 @@
 
           <s_sidebar_element>
             <!-- 최근 포스트 -->
-            <div class="sidebarItem">
-              <p class="sidebarTitle"><i class="fas fa-pen"></i> 최근 포스트</p>
-              <div class="sidebarContent">
+            <div class="sidebar-item">
+              <p class="sidebar-title"><i class="fas fa-pen"></i> 최근 포스트</p>
+              <div class="sidebar-content">
                 <s_rctps_rep>
                   <a href="[##_rctps_rep_link_##]">[##_rctps_rep_title_##]</a>
                 </s_rctps_rep>
@@ -487,9 +487,9 @@
 
           <s_sidebar_element>
             <!-- 아카이브 -->
-            <div class="sidebarItem">
-              <p class="sidebarTitle"><i class="fas fa-archive"></i> 아카이브</p>
-              <div class="sidebarContent">
+            <div class="sidebar-item">
+              <p class="sidebar-title"><i class="fas fa-archive"></i> 아카이브</p>
+              <div class="sidebar-content">
                 <s_archive_rep>
                   <a href="[##_archive_rep_link_##]">
                     [##_archive_rep_date_##]<span class="cnt">([##_archive_rep_count_##])</span>
@@ -501,9 +501,9 @@
 
           <s_sidebar_element>
             <!-- 방문자 카운터 -->
-            <div class="sidebarItem">
-              <p class="sidebarTitle"><i class="fas fa-globe"></i> 방문자 카운터</p>
-              <div class="sidebarContent">
+            <div class="sidebar-item">
+              <p class="sidebar-title"><i class="fas fa-globe"></i> 방문자 카운터</p>
+              <div class="sidebar-content">
                 <p class="today">오늘 방문자 : [##_count_today_##]</p>
                 <p class="yesterday">어제 방문자 : [##_count_yesterday_##]</p>
                 <p class="total">전체 방문자 : [##_count_total_##] </p>
@@ -515,7 +515,7 @@
 
       <!-- 하단 스킨 제작, 저작권 -->
       <footer>
-        <div id="blogBottom">
+        <div id="blog-bottom">
           <p id="nihil">© NIHIL Blog.</p>
           <p id="power">Powered by <a href="https://www.tistory.com/" target="_blank" rel="noopener noreferrer">Tistory</a></p>
         </div>
@@ -525,7 +525,7 @@
   <!-- 카테고리 포스트 수 괄호 없애기 -->
   <script src="./images/categorySpanNumber.js" type="text/javascript"></script>
   <script>
-    const contentArticle = document.getElementsByClassName('contentArticle')[0];
+    const contentArticle = document.getElementsByClassName('content-article')[0];
     const pattern = /(<b\s?)(.+?)(<\/b>)/gi
 
     contentArticle.innerHTML = contentArticle.innerHTML.replace(pattern, '<strong$2</strong>');

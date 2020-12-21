@@ -1,7 +1,7 @@
 
 /* 화면 좁을때 */
 @media (min-width: 1px) and (max-width: 600px) {
-  .quoteBlock > blockquote,
+  .quote-block > blockquote,
   .btn-toggle-moreless {
     font-size: 11pt !important;
   }
@@ -21,7 +21,7 @@
 
 /* 화면 넓을 때 */
 @media (min-width: 601px) {
-  .quoteBlock > blockquote,
+  .quote-block > blockquote,
   .btn-toggle-moreless {
     font-size: 14pt !important;
   }
@@ -40,10 +40,10 @@
 }
 
 /* 메시지 박스 */
-.messageRed,
-.messageBlue,
-.messageGreen,
-.messageYellow {
+.message-red,
+.message-blue,
+.message-green,
+.message-yellow {
   padding: 5px;
   border-radius: 10px;
   text-align: justify;
@@ -51,54 +51,54 @@
   margin-top: 20px;
 }
 
-.messageRed {
+.message-red {
   background: #333333;
   color: #ff5b5b;
 }
 
-.messageBlue {
+.message-blue {
   background: #333333;
   color: #3daeff;
 }
 
-.messageGreen {
+.message-green {
   background: #333333;
   color: #11b32c;
 }
 
-.messageYellow {
+.message-yellow {
   background: #333333;
   color: #e0e000;
 }
 
-.messageRed > p:nth-child(1),
-.messageBlue > p:nth-child(1),
-.messageGreen > p:nth-child(1),
-.messageYellow > p:nth-child(1) {
+.message-red > p:nth-child(1),
+.message-blue > p:nth-child(1),
+.message-green > p:nth-child(1),
+.message-yellow > p:nth-child(1) {
   margin-top: 0px !important;
 }
 
-.messageRed > p:nth-last-child(1),
-.messageBlue > p:nth-last-child(1),
-.messageGreen > p:nth-last-child(1),
-.messageYellow > p:nth-last-child(1) {
+.message-red > p:nth-last-child(1),
+.message-blue > p:nth-last-child(1),
+.message-green > p:nth-last-child(1),
+.message-yellow > p:nth-last-child(1) {
   margin-bottom: 0px !important;
 }
 
-.messageRed > p,
-.messageBlue > p,
-.messageGreen > p,
-.messageYellow > p {
+.message-red > p,
+.message-blue > p,
+.message-green > p,
+.message-yellow > p {
   text-indent: 10px;
   margin-top: 10px !important;
   margin-bottom: 10px !important;
   line-height: 1.5;
 }
 
-.messageRed:before,
-.messageBlue:before,
-.messageGreen:before,
-.messageYellow:before {
+.message-red:before,
+.message-blue:before,
+.message-green:before,
+.message-yellow:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   margin-bottom: 10px;
@@ -107,24 +107,24 @@
   text-align: center;
 }
 
-.messageRed:before {
+.message-red:before {
   content: "\f057";
 }
 
-.messageBlue:before {
+.message-blue:before {
   content: "\f059";
 }
 
-.messageGreen:before {
+.message-green:before {
   content: "\f05a";
 }
 
-.messageYellow:before {
+.message-yellow:before {
   content: "\f06a";
 }
 
 /* 외부 링크 */
-.linkNomal {
+.link-normal {
   border: 1px solid #11b32c;
   color: #11b32c;
   padding: 0px 5px;
@@ -133,12 +133,12 @@
   font-size: 90%;
 }
 
-.linkNomal:hover {
+.link-normal:hover {
   color: #ffffff;
   background: #11b32c;
 }
 
-.linkNomal:after {
+.link-normal:after {
   content: "\f360";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -146,7 +146,7 @@
 }
 
 /* 유튜브 링크 */
-.linkYoutube {
+.link-youtube {
   border: 1px solid #c30505;
   color: #c30505;
   padding: 0px 5px;
@@ -155,12 +155,12 @@
   font-size: 90%;
 }
 
-.linkYoutube:hover {
+.link-youtube:hover {
   color: #ffffff;
   background: #c30505;
 }
 
-.linkYoutube:after {
+.link-youtube:after {
   content: "\f167";
   font-family: "Font Awesome 5 Brands";
   font-weight: 900;
@@ -168,7 +168,7 @@
 }
 
 /* 내부 링크 */
-.linkBlog {
+.link-blog {
   border: 1px solid #218cd8;
   color: #218cd8;
   padding: 0px 5px;
@@ -177,12 +177,12 @@
   font-size: 90%;
 }
 
-.linkBlog:hover {
+.link-blog:hover {
   color: #ffffff;
   background: #218cd8;
 }
 
-.linkBlog:after {
+.link-blog:after {
   content: "\f0c1";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -190,12 +190,12 @@
 }
 
 /* 인용 블럭 */
-.quoteBlock {
+.quote-block {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.quoteBlock > blockquote {
+.quote-block > blockquote {
   background: #888888;
   padding: 5px;
   border: 1px solid #33333350;
@@ -204,21 +204,21 @@
   text-align: center;
 }
 
-.quoteBlock > blockquote:before {
+.quote-block > blockquote:before {
   content: "\f10d";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   margin-right: 10px;
 }
 
-.quoteBlock > blockquote:after {
+.quote-block > blockquote:after {
   content: "\f10e";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   margin-left: 10px;
 }
 
-.quoteBlock > p {
+.quote-block > p {
   margin-top: 5px !important;
   text-align: right;
   color: #333333;
@@ -285,7 +285,7 @@
 }
 
 /* 단어 강조 */
-.postWordBox {
+.post-word-box {
   background: #eeeeee;
   color: #666666;
   padding: 0px 5px;
@@ -298,7 +298,7 @@
 }
 
 /* 코드 강조 */
-.postCodeBox {
+.post-code-box {
   padding: 0px 5px !important;
   border-radius: 5px;
   font-weight: 600;
@@ -312,7 +312,7 @@
 }
 
 /* 더보기 버튼 */
-.postMoreBox {
+.post-more-box {
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -320,7 +320,7 @@
 }
 
 .btn-toggle-moreless,
-.postMoreBox > div[class=""] > .btn-toggle-moreless {
+.post-more-box > div[class=""] > .btn-toggle-moreless {
   padding: 5px;
   background: #333333 !important;
   display:block;
@@ -329,19 +329,19 @@
   border-radius: 10px;
 }
 
-.postMoreBox > div[class=""] > .btn-toggle-moreless:before {
+.post-more-box > div[class=""] > .btn-toggle-moreless:before {
   content: "\f35a";
   margin-right: 5px;
   font-family: "Font Awesome 5 Free";
 }
 
-.postMoreBox > div[class="open"] > .btn-toggle-moreless:before {
+.post-more-box > div[class="open"] > .btn-toggle-moreless:before {
   content: "\f358";
   margin-right: 5px;
   font-family: "Font Awesome 5 Free";
 }
 
-.postMoreBox > div[class="open"] > .btn-toggle-moreless {
+.post-more-box > div[class="open"] > .btn-toggle-moreless {
   padding: 5px;
   background: #333333 !important;
   display:block;
@@ -367,12 +367,12 @@
 }
 
 /* 유튜브 박스 */
-.postYoutubeBox {
+.post-youtube-box {
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
-.postYoutubeBox > .boxName {
+.post-youtube-box > .box-name {
   padding: 5px;
   color: #ffffff;
   background: #c00c00;
@@ -381,14 +381,14 @@
   font-weight: 900;
 }
 
-.postYoutubeBox > .boxName:before {
+.post-youtube-box > .box-name:before {
   content: "\f167";
   margin-right: 5px;
   font-weight: 500;
   font-family: "Font Awesome 5 Brands";
 }
 
-.postYoutubeBox > .video_wrapper {
+.post-youtube-box > .video_wrapper {
   padding: 0px 5px 5px 5px;
   box-sizing: border-box;
   background: #c00c00;
@@ -399,7 +399,7 @@
   padding-bottom: 56.25%;
 }
 
-.postYoutubeBox > .video_wrapper > iframe {
+.post-youtube-box > .video_wrapper > iframe {
   position: absolute;
   width: calc(100% - 10px);
   height: calc(100% - 5px);
@@ -469,12 +469,12 @@
 }
 
 /* 순서 없는 목록 */
-.listBody,
-.listBody ul {
+.list-body,
+.list-body ul {
   list-style-type: none;
 }
 
-.listBody {
+.list-body {
   margin-top: 30px;
   margin-bottom: 30px;
   background: #eeeeee;
@@ -483,46 +483,46 @@
   border: 1px solid #33333320;
 }
 
-.listBody > li:before {
+.list-body > li:before {
   content: "\f35a";
   font-family: "Font Awesome 5 Free";
   margin-right: 10px;
   font-weight: 900;
 }
 
-.listBody li {
+.list-body li {
   margin-top: 5px;
   margin-bottom: 5px;
   letter-spacing: -1px;
 }
 
-.listBody > li:nth-child(1) {
+.list-body > li:nth-child(1) {
   margin-top: 0px;
   margin-bottom: 5px;
   letter-spacing: -1px;
 }
 
-.listBody > li:nth-last-child(1) {
+.list-body > li:nth-last-child(1) {
   margin-top: 5px;
   margin-bottom: 0px;
   letter-spacing: -1px;
 }
 
-.listBody > li > ul > li {
+.list-body > li > ul > li {
   margin-left: 30px;
 }
 
-.listBody > li > ul > li:before {
+.list-body > li > ul > li:before {
   content: "\f35a";
   font-family: "Font Awesome 5 Free";
   margin-right: 10px;
 }
 
-.listBody > li > ul > li > ul > li {
+.list-body > li > ul > li > ul > li {
   margin-left: 30px;
 }
 
-.listBody > li > ul > li > ul > li:before {
+.list-body > li > ul > li > ul > li:before {
   content: "\f061";
   font-family: "Font Awesome 5 Free";
   margin-right: 10px;
@@ -530,13 +530,13 @@
 }
 
 /* 순서 있는 목록 */
-.orderListBody,
-.orderListBody ol {
+.order-list-body,
+.order-list-body ol {
   list-style-type: none;
   counter-reset: number;
 }
 
-.orderListBody {
+.order-list-body {
   margin-top: 30px;
   margin-bottom: 30px;
   background: #eeeeee;
@@ -545,33 +545,33 @@
   border: 1px solid #33333320;
 }
 
-.orderListBody li {
+.order-list-body li {
   counter-increment: number;
   margin-top: 5px;
   margin-bottom: 5px;
   letter-spacing: -1px;
 }
 
-.orderListBody > li:nth-child(1) {
+.order-list-body > li:nth-child(1) {
   counter-increment: number;
   margin-top: 0px;
   margin-bottom: 5px;
   letter-spacing: -1px;
 }
 
-.orderListBody > li:nth-last-child(1) {
+.order-list-body > li:nth-last-child(1) {
   counter-increment: number;
   margin-top: 5px;
   margin-bottom: 0px;
   letter-spacing: -1px;
 }
 
-.orderListBody li:before {
+.order-list-body li:before {
   content: counter(number) ".";
   margin-right: 10px;
 }
 
-.orderListBody > li:before {
+.order-list-body > li:before {
   background: #333333;
   color: #ffffff;
   font-weight: 900;
@@ -579,11 +579,11 @@
   border-radius: 5px;
 }
 
-.orderListBody > li > ol > li {
+.order-list-body > li > ol > li {
   margin-left: 30px;
 }
 
-.orderListBody > li > ol > li:before {
+.order-list-body > li > ol > li:before {
   background: #555555;
   color: #ffffff;
   font-weight: 900;
@@ -591,11 +591,11 @@
   border-radius: 5px;
 }
 
-.orderListBody > li > ol > li > ol > li {
+.order-list-body > li > ol > li > ol > li {
   margin-left: 30px;
 }
 
-.orderListBody > li > ol > li > ol > li:before {
+.order-list-body > li > ol > li > ol > li:before {
   background: #888888;
   color: #ffffff;
   font-weight: 900;
@@ -604,7 +604,7 @@
 }
 
 /* 용어 설명 목록 */
-.descListBody {
+.desc-list-body {
   margin-top: 30px;
   margin-bottom: 30px;
   background: #eeeeee;
@@ -613,7 +613,7 @@
   border: 1px solid #33333320;
 }
 
-.descListBody > dt {
+.desc-list-body > dt {
   background: #888888;
   color: #ffffff;
   padding: 0px 10px;
@@ -622,18 +622,18 @@
   z-index: 3;
 }
 
-.descListBody > dt:before {
+.desc-list-body > dt:before {
   content: '\f27a';
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   margin-right: 10px;
 }
 
-.descListBody > dt:nth-child(1) {
+.desc-list-body > dt:nth-child(1) {
   margin-top: 0px;
 }
 
-.descListBody > dd {
+.desc-list-body > dd {
   margin-bottom: 20px;
   padding: 10px;
   border-top: 0px;
@@ -645,13 +645,13 @@
   z-index: 2;
 }
 
-.descListBody > dd:before {
+.desc-list-body > dd:before {
   content: '\f022';
   font-family: "Font Awesome 5 Free";
   margin-right: 10px;
 }
 
-.descListBody > dd:nth-last-child(1) {
+.desc-list-body > dd:nth-last-child(1) {
   margin-bottom: 0px;
 }
 
@@ -666,13 +666,13 @@
 }
 
 /* 포스트 키워드 모음 */
-.postKeyowrds {
+.post-keywords {
   color: #888888;
   font-size: 10pt;
 }
 
 /* 한줄 인용 박스 */
-.postQuoteBox {
+.post-quote-box {
   padding: 0px 5px;
   background: #888888;
   border: 1px solid #33333350;
@@ -681,13 +681,13 @@
   font-size: 90%;
 }
 
-.postQuoteBox::before {
+.post-quote-box::before {
   content: '\f10d';
   font-weight: 900;
   font-family: "Font Awesome 5 Free";
   margin-right: 10px;
 }
-.postQuoteBox::after {
+.post-quote-box::after {
   content: '\f10e';
   font-weight: 900;
   font-family: "Font Awesome 5 Free";
@@ -696,7 +696,7 @@
 
 /* 리뷰 점수 */
 
-.starScore {
+.star-score {
   background: #333333;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -707,129 +707,129 @@
   font-size: 150%;
 }
 
-.starScore .scoreTitle {
+.star-score .score-title {
   font-weight: 600;
   margin: 0px 0px 0px 0px !important;
   text-indent: 0px;
 }
 
-.starScore .s05,
-.starScore .s1,
-.starScore .s15,
-.starScore .s2,
-.starScore .s25,
-.starScore .s3,
-.starScore .s35,
-.starScore .s4,
-.starScore .s45,
-.starScore .s5 {
+.star-score .s05,
+.star-score .s1,
+.star-score .s15,
+.star-score .s2,
+.star-score .s25,
+.star-score .s3,
+.star-score .s35,
+.star-score .s4,
+.star-score .s45,
+.star-score .s5 {
   margin: 0px 0px 0px 0px !important;
   text-indent: 0px;
 }
 
-.starScore .s05:before {
+.star-score .s05:before {
   content: '\f5c0';
   font-family: "Font Awesome 5 Free";
   font-weight: 600;
 }
 
-.starScore .s05:after {
+.star-score .s05:after {
   content: '\f005 \f005 \f005 \f005';
   font-family: "Font Awesome 5 Free";
   font-weight: 500;
 }
 
-.starScore .s1:before {
+.star-score .s1:before {
   content: '\f005';
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
 
-.starScore .s1:after {
+.star-score .s1:after {
   content: '\f005 \f005 \f005 \f005';
   font-family: "Font Awesome 5 Free";
   font-weight: 500;
 }
 
-.starScore .s15:before {
+.star-score .s15:before {
   content: '\f005 \f5c0';
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
 
-.starScore .s15:after {
+.star-score .s15:after {
   content: '\f005 \f005 \f005';
   font-family: "Font Awesome 5 Free";
   font-weight: 500;
 }
 
-.starScore .s2:before {
+.star-score .s2:before {
   content: '\f005 \f005';
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
 
-.starScore .s2:after {
+.star-score .s2:after {
   content: '\f005 \f005 \f005';
   font-family: "Font Awesome 5 Free";
   font-weight: 500;
 }
 
-.starScore .s25:before {
+.star-score .s25:before {
   content: '\f005 \f005 \f5c0';
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
 
-.starScore .s25:after {
+.star-score .s25:after {
   content: '\f005 \f005';
   font-family: "Font Awesome 5 Free";
   font-weight: 500;
 }
 
-.starScore .s3:before {
+.star-score .s3:before {
   content: '\f005 \f005 \f005';
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
 
-.starScore .s3:after {
+.star-score .s3:after {
   content: '\f005 \f005';
   font-family: "Font Awesome 5 Free";
   font-weight: 500;
 }
 
-.starScore .s35:before {
+.star-score .s35:before {
   content: '\f005 \f005 \f005 \f5c0';
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
 
-.starScore .s35:after {
+.star-score .s35:after {
   content: '\f005';
   font-family: "Font Awesome 5 Free";
   font-weight: 500;
 }
 
-.starScore .s4:before {
+.star-score .s4:before {
   content: '\f005 \f005 \f005 \f005';
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
 
-.starScore .s4:after {
+.star-score .s4:after {
   content: '\f005';
   font-family: "Font Awesome 5 Free";
   font-weight: 500;
 }
 
-.starScore .s45:before {
+.star-score .s45:before {
   content: '\f005 \f005 \f005 \f005 \f5c0';
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
 
-.starScore .s5:before {
+.star-score .s5:before {
   content: '\f005 \f005 \f005 \f005 \f005';
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -837,89 +837,89 @@
 
 /* 메시지 박스 링크 */
 
-.messageRed .linkBlog,
-.messageRed .linkNomal {
+.message-red .link-blog,
+.message-red .link-normal {
   color: #ff5b5b;
   border: 1px solid #ff5b5b;
 }
 
-.messageRed .linkBlog:hover,
-.messageRed .linkNomal:hover {
+.message-red .link-blog:hover,
+.message-red .link-normal:hover {
   color: #ffffff;
   background: #ff5b5b;
 }
 
-.messageBlue .linkBlog,
-.messageBlue .linkNomal {
+.message-blue .link-blog,
+.message-blue .link-normal {
   color: #3daeff;
   border: 1px solid #3daeff;
 }
 
-.messageBlue .linkBlog:hover,
-.messageBlue .linkNomal:hover {
+.message-blue .link-blog:hover,
+.message-blue .link-normal:hover {
   color: #ffffff;
   background: #3daeff;
 }
 
-.messageYellow .linkBlog,
-.messageYellow .linkNomal {
+.message-yellow .link-blog,
+.message-yellow .link-normal {
   color: #e0e000;
   border: 1px solid #e0e000;
 }
 
-.messageYellow .linkBlog:hover,
-.messageYellow .linkNomal:hover {
+.message-yellow .link-blog:hover,
+.message-yellow .link-normal:hover {
   color: #333333;
   background: #e0e000;
 }
 
-.messageGreen .linkBlog,
-.messageGreen .linkNomal {
+.message-green .link-blog,
+.message-green .link-normal {
   color: #11b32c;
   border: 1px solid #11b32c;
 }
 
-.messageGreen .linkBlog:hover,
-.messageGreen .linkNomal:hover {
+.message-green .link-blog:hover,
+.message-green .link-normal:hover {
   color: #ffffff;
   background: #11b32c;
 }
 
 /* 중요 단어 표시 */
 
-.contentArticle p > strong {
+.content-article p > strong {
   font-weight: 600;
   color: #ff5b5b;
 }
 
-.postKeyowrds > strong {
+.post-keywords > strong {
   color: #888888 !important;
 }
 
-.messageRed > p > strong,
-.messageRed > p > b {
+.message-red > p > strong,
+.message-red > p > b {
   font-weight: 900;
   color: #ff5b5b;
 }
-.messageBlue > p > strong,
-.messageBlue > p > b {
+.message-blue > p > strong,
+.message-blue > p > b {
   font-weight: 900;
   color: #3daeff;
 }
 
-.messageGreen > p > strong,
-.messageGreen > p > b {
+.message-green > p > strong,
+.message-green > p > b {
   font-weight: 900;
   color: #11b32c;
 }
 
-.messageYellow > p > strong,
-.messageYellow > p > b {
+.message-yellow > p > strong,
+.message-yellow > p > b {
   font-weight: 900;
   color: #e0e000;
 }
 
-strong > .postWordBox {
+strong > .post-word-box {
   font-weight: 600;
   color: #ff5b5b;
   background: #ffe0e0;
