@@ -132,7 +132,8 @@ figure {
   .comment-write #name,
   .comment-write #pwd,
   .comment-write .desc-input textarea,
-  .comment-write .comment-button button {
+  .comment-write .comment-button button,
+  .page-description {
     font-size: 11pt;
   }
 
@@ -166,7 +167,8 @@ figure {
   .comment-write #name,
   .comment-write #pwd,
   .comment-write .desc-input textarea,
-  .comment-write .comment-button button {
+  .comment-write .comment-button button,
+  .page-description {
     font-size: 14pt;
   }
 
@@ -285,11 +287,17 @@ figure {
   margin-bottom: 60px;
 }
 
+.blog-top-page > .page-description {
+  margin-bottom: 60px;
+  text-align: justify;
+  text-indent: 15px;
+}
+
 .blog-top-page > .page-item {
   text-align: justify;
 }
 
-.blog-top-page > .page-item > a {
+.blog-top-page > .page-item > .active-item {
   border: 1px solid #333333;
   color: #333333;
   padding: 0px 5px;
@@ -298,9 +306,19 @@ figure {
   font-size: 90%;
 }
 
-.blog-top-page > .page-item > a:hover {
+.blog-top-page > .page-item > .active-item:hover {
   background: #333333;
   color: #ffffff;
+}
+
+.blog-top-page > .page-item > .non-active-item {
+  padding: 0px 5px;
+  margin-bottom: 5px;
+  font-size: 90%;
+  border: 1px solid #88888890;
+  color: #88888890;
+  border-radius: 5px;
+  cursor: default;
 }
 
 /* 이동 버튼 */
@@ -547,8 +565,8 @@ input#entry4password::placeholder {
   text-align: justify;
 }
 
-.content-article p {
-  margin: 20px 0px !important;
+.content-article > p {
+  margin: 20px 0px;
   text-indent: 15px;
   line-height: 1.8;
   letter-spacing: -1px;

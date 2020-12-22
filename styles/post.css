@@ -457,6 +457,15 @@
   font-weight: 900;
 }
 
+.jp-word > .japanese > .jp-red,
+.jp-word > .korean > .jp-red {
+  color: #56b6ff;
+}
+
+.jp-word > .korean > .jp-red {
+  font-weight: 900;
+}
+
 /* 일본어 블럭 */
 .japanese-block {
   padding: 10px;
@@ -480,6 +489,15 @@
   padding: 0px 5px;
   color: #ffffff;
   border-radius: 10px;
+  font-weight: 900;
+}
+
+.japanese-block > .japanese > .jp-red,
+.japanese-block > .korean > .jp-red {
+  color: #56b6ff;
+}
+
+.japanese-block > .korean > .jp-red {
   font-weight: 900;
 }
 
