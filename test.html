@@ -1,21 +1,40 @@
-<!-- Inline CSS -->
-<p style="color: #333333">아이유 만세</p>
+<!-- 인라인 형식 -->
+<button type="button" onclick="() => {console.log('자바스크립트')}">버튼</button>
 
-<!-- Internal CSS -->
-<style >
-  p {
-    color: #333333;
-  }
-</style>
+<!-- script태그 내부에 작성하는 형식 -->
+<script>
+  '자바스크립트 코드';
+</script>
 
-<p>아이유 만세</p>
+<!-- script태그로 외부파일 불러오는 방식 -->
+<script src="./scripts.js" type="text/javascript"></script>
 
 <head>
-  <title>title</title>
-  <!-- External CSS -->
-  <link rel="stylesheet" type="text/css" href="./style.css" />
-</head>
+  <!-- 인코딩 정보 설정 -->
+  <meta charset="UTF-8" />
 
-<body>
-  <p>아이유 만세</p>
-</body>
+  <!-- 기본적인 정보를 설정합니다. -->
+  <meta name="description" content="미리보기 문구 혹은 페이지 설명" />
+  <meta name="keywords" content="키워드를,입력하세요,쉼표로,구분합니다" />
+  <meta name="author" content="제작자 이름" />
+  <meta name="generator" content="제작 프로그램 이름" />
+
+  <!-- 뷰포트를 설정합니다. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+
+  <!-- 오픈 그래프를 설정합니다. -->
+  <meta property="og:site_name" content="사이트 이름" />
+  <meta property="og:title" content="페이지 이름" />
+  <meta property="og:description" content="페이지 설명" />
+  <meta property="og:type" content="페이지의 종류" />
+  <meta property="og:image" content="대표 이미지 주소" />
+  <meta property="og:url" content="페이지 주소" />
+
+  <!-- 트위터 카드를 설정합니다. -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="페이지 이름" />
+  <meta name="twitter:description" content="페이지 설명" />
+  <meta name="twitter:image" content="대표 이미지 주소" />
+
+  <title>아이유 만세</title>
+</head>
