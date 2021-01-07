@@ -44,31 +44,36 @@
 .message-blue,
 .message-green,
 .message-yellow {
-  padding: 5px;
+  padding: 10px;
   border-radius: 10px;
   text-align: justify;
   margin-bottom: 20px;
   margin-top: 20px;
+  font-size: 90%;
 }
 
 .message-red {
-  background: #333333;
+  background: #ff5b5b50;
   color: #ff5b5b;
+  border: 1px solid #ff5b5b50;
 }
 
 .message-blue {
-  background: #333333;
-  color: #3daeff;
+  background: #3daeff50;
+  color: #0084e2;
+  border: 1px solid #0084e250;
 }
 
 .message-green {
-  background: #333333;
-  color: #11b32c;
+  background: #11b32c50;
+  color: #05881b;
+  border: 1px solid #05881b50;
 }
 
 .message-yellow {
-  background: #333333;
-  color: #e0e000;
+  background: #ff922c50;
+  color: #f37b0d;
+  border: 1px solid #f37b0d50;
 }
 
 .message-red > p:nth-child(1),
@@ -103,24 +108,23 @@
   font-weight: 900;
   margin-bottom: 10px;
   display:block;
-  font-size: 40pt;
-  text-align: center;
+  font-size: 120%;
 }
 
 .message-red:before {
-  content: "\f057";
+  content: "\f057  위험";
 }
 
 .message-blue:before {
-  content: "\f059";
+  content: "\f059  안내";
 }
 
 .message-green:before {
-  content: "\f05a";
+  content: "\f05a  정보";
 }
 
 .message-yellow:before {
-  content: "\f06a";
+  content: "\f06a  주의";
 }
 
 /* 외부 링크 */
@@ -884,38 +888,38 @@
 
 .message-blue .link-blog,
 .message-blue .link-normal {
-  color: #3daeff;
-  border: 1px solid #3daeff;
+  color: #0084e2;
+  border: 1px solid #0084e2;
 }
 
 .message-blue .link-blog:hover,
 .message-blue .link-normal:hover {
   color: #ffffff;
-  background: #3daeff;
+  background: #0084e2;
 }
 
 .message-yellow .link-blog,
 .message-yellow .link-normal {
-  color: #e0e000;
-  border: 1px solid #e0e000;
+  color: #f37b0d;
+  border: 1px solid #f37b0d;
 }
 
 .message-yellow .link-blog:hover,
 .message-yellow .link-normal:hover {
-  color: #333333;
-  background: #e0e000;
+  color: #ffffff;
+  background: #f37b0d;
 }
 
 .message-green .link-blog,
 .message-green .link-normal {
-  color: #11b32c;
-  border: 1px solid #11b32c;
+  color: #05881b;
+  border: 1px solid #05881b;
 }
 
 .message-green .link-blog:hover,
 .message-green .link-normal:hover {
   color: #ffffff;
-  background: #11b32c;
+  background: #05881b;
 }
 
 /* 중요 단어 표시 */
