@@ -127,6 +127,40 @@
   content: "\f06a  주의";
 }
 
+/* 중요 단어 표시 */
+
+.content-article p > strong {
+  font-weight: 600;
+  color: #ff5b5b;
+}
+
+.post-keywords > strong {
+  color: #888888 !important;
+}
+
+.message-red > p > strong,
+.message-red > p > b {
+  font-weight: 900;
+  color: #ff5b5b;
+}
+.message-blue > p > strong,
+.message-blue > p > b {
+  font-weight: 900;
+  color: #3daeff;
+}
+
+.message-green > p > strong,
+.message-green > p > b {
+  font-weight: 900;
+  color: #11b32c;
+}
+
+.message-yellow > p > strong,
+.message-yellow > p > b {
+  font-weight: 900;
+  color: #f37b0d;
+}
+
 /* 외부 링크 */
 .link-normal {
   border: 1px solid #11b32c;
@@ -920,40 +954,6 @@
 .message-green .link-normal:hover {
   color: #ffffff;
   background: #05881b;
-}
-
-/* 중요 단어 표시 */
-
-.content-article p > strong {
-  font-weight: 600;
-  color: #ff5b5b;
-}
-
-.post-keywords > strong {
-  color: #888888 !important;
-}
-
-.message-red > p > strong,
-.message-red > p > b {
-  font-weight: 900;
-  color: #ff5b5b;
-}
-.message-blue > p > strong,
-.message-blue > p > b {
-  font-weight: 900;
-  color: #3daeff;
-}
-
-.message-green > p > strong,
-.message-green > p > b {
-  font-weight: 900;
-  color: #11b32c;
-}
-
-.message-yellow > p > strong,
-.message-yellow > p > b {
-  font-weight: 900;
-  color: #e0e000;
 }
 
 strong > .post-word-box {
